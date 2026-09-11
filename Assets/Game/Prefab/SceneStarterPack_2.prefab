@@ -230,7 +230,7 @@ GameObject:
   - component: {fileID: 7281687720163444837}
   - component: {fileID: 9208701851753147717}
   m_Layer: 5
-  m_Name: Milieu
+  m_Name: Crosshair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -245,8 +245,8 @@ RectTransform:
   m_GameObject: {fileID: 1833692369952463729}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 9067813692967913725}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -283,9 +283,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a85077995184da94292beb9dffb28f15, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d65cb467b82f550428b0c6e4a6c12a80, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -1734,9 +1734,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Reset Room
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e321884d8e63c994391b51345d66fc63, type: 2}
-  m_sharedMaterial: {fileID: -3383260492545091526, guid: e321884d8e63c994391b51345d66fc63,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3506,26 +3505,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RenderingLayerMask
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2682455399166526803, guid: b5eeb929aa87481439de01016bcf6589,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.0000009536743
-      objectReference: {fileID: 0}
-    - target: {fileID: 2682455399166526803, guid: b5eeb929aa87481439de01016bcf6589,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2682455399166526803, guid: b5eeb929aa87481439de01016bcf6589,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2682455399166526803, guid: b5eeb929aa87481439de01016bcf6589,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2762575776739586518, guid: b5eeb929aa87481439de01016bcf6589,
         type: 3}

@@ -147,7 +147,6 @@ public class PlayerTrigger : MonoBehaviour
                 _playerMovement.SetExternallyAppliedMovement(Vector3.zero);
                 break;
             case "FreeFallZone":
-                print("GETOUT OF HERE");
                 _playerMovement.FreeFallZone = false;
                 break;
 

@@ -66,6 +66,9 @@ public class SteamManager : MonoBehaviour {
 			Destroy(gameObject);
 			return;
 		}
+
+		transform.parent = null;
+		DontDestroyOnLoad(gameObject);
 		s_instance = this;
 
 		if(s_EverInitialized) {

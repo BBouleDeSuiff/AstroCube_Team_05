@@ -31,7 +31,6 @@ public class ActivateControlTips : MonoBehaviour
         EventManager.OnEndCubeRotation += Add1ToRotationCount;
         EventManager.OnPlayerReset += ResetRotationCound;
         OnSuggestRestart += SuggestRestartEvent.Invoke;
-        print("debugenable");
     }
 
     private void OnDisable()
@@ -39,7 +38,6 @@ public class ActivateControlTips : MonoBehaviour
         EventManager.OnEndCubeRotation -= Add1ToRotationCount;
         EventManager.OnPlayerReset -= ResetRotationCound;
         OnSuggestRestart -= SuggestRestartEvent.Invoke;
-        print("debugdisable");
     }
 
     private void Update()
@@ -58,10 +56,7 @@ public class ActivateControlTips : MonoBehaviour
         if (_restartControlTipPopUp == null) return;
 
         _rotationCount++;
-        if (_rotationCount >= _numOfRotationsBeforPopUp)
-            SuggestRestartEvent.Invoke(true);
-            //OnSuggestRestart.Invoke(true);
-        print("debugaddtocount");
+        if (_rotationCount >= _numOfRotationsBeforPopUp) OnSuggestRestart.Invoke(true);
     }
 
     void ResetRotationCound(float iDontNeedThisFloat)
@@ -70,13 +65,11 @@ public class ActivateControlTips : MonoBehaviour
 
         _rotationCount *= -1;
         OnSuggestRestart.Invoke(false);
-        print("countresetdebug");
     }
 
     public void SetPlaceHolderPopUpActive(bool newActiveStatus)
     {
         if (_restartControlTipPopUp.activeSelf == !newActiveStatus)
             _restartControlTipPopUp.SetActive(newActiveStatus);
-        print("debugsetactive");
     }
 }

@@ -27,11 +27,9 @@ public class GameActionToggleInput : AGameAction
         switch (_inputToggleType)
         {
             case EInputToggleType.ENABLE:
-                InputHandler.Instance.CanMove = true;
                 InputHandler.EnableInputs(GetFlags(_targetInputs));
                 break;  
             case EInputToggleType.DISABLE:
-                InputHandler.Instance.CanMove = false;
                 InputHandler.DisableInputs(GetFlags(_targetInputs));
                 break;
         }

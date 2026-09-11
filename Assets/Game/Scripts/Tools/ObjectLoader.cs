@@ -10,7 +10,6 @@ public class ObjectLoader : MonoBehaviour
     public List<GameObject> toDeActivate = new List<GameObject>();
     public void SwitchActivate()
     {
-        //print("aaaaaaa");
         toActivate.ForEach(t => t.SetActive(isActivatedOnce));
         toDeActivate.ForEach(t => t.SetActive(!isActivatedOnce));
         isActivatedOnce = !isActivatedOnce;

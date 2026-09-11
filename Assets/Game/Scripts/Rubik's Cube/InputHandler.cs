@@ -251,9 +251,9 @@ public class InputHandler : MonoBehaviour
             OnFakeCamera(ctx);
             return;
         }
-        if (!IsInputEnabled(EInputType.MOVEMENT)) return;
+
         if (!_controller.ControlledScript.IsReversing)
-            _playerMovement.ActionMovement(ctx.ReadValue<Vector2>());
+            _playerMovement.ActionMovement(IsInputEnabled(EInputType.MOVEMENT) ? ctx.ReadValue<Vector2>() : Vector2.zero);        
     }
 
     void onFakeMovement(InputAction.CallbackContext ctx)

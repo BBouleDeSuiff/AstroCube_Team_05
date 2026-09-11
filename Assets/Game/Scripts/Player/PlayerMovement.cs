@@ -50,7 +50,9 @@ public class PlayerMovement : MonoBehaviour
     float _currentFallSpeed;
     Vector3 _horizontalVelocity;
     bool _isGrounded;
+    bool _oldIsGrounded;
     float _currentCoyoteTime;
+    bool _isOnStairs;
 
     float _defaultCameraHeight;
     float _defaultControllerHeight;
@@ -129,13 +131,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!_canMove) return;
-
         //check player state
-        bool oldIsGrounded = _isGrounded;
+        _oldIsGrounded = _isGrounded;
         _isGrounded = Physics.CheckSphere(_floorCheck.position, _floorDistance, _floorLayer);
 
-        if (oldIsGrounded == false && _isGrounded == true)
+        if (!_canMove) return;
+
+        if (_oldIsGrounded == false && _isGrounded == true)
         {
             // player just landed on the ground
             EventManager.TriggerPlayerStopsFalling();
@@ -185,14 +187,14 @@ public class PlayerMovement : MonoBehaviour
         // movePlayer (walking around)
         if (_isGrounded)
         {
-            _horizontalVelocity = transform.right * _xInput + transform.forward * _zInput;
+            _horizontalVelocity = _camera.right * _xInput + _camera.forward * _zInput;
 
         }
         else
         {
             float mag = _horizontalVelocity.magnitude;
-            if (mag != 0) _horizontalVelocity = (transform.right * _xInput + transform.forward * _zInput).normalized * mag * 1.002f;
-            else _horizontalVelocity = (transform.right * _xInput + transform.forward * _zInput);
+            if (mag != 0) _horizontalVelocity = (_camera.right * _xInput + _camera.forward * _zInput).normalized * mag * 1.002f;
+            else _horizontalVelocity = (_camera.right * _xInput + _camera.forward * _zInput);
         }
 
         if (_isSlipping)
@@ -209,7 +211,7 @@ public class PlayerMovement : MonoBehaviour
         if (_isGrounded)
             _currentCoyoteTime = _coyoteTime;
         else
-            _currentCoyoteTime -= Time.fixedDeltaTime;
+            _currentCoyoteTime -= Time.deltaTime;
 
         // jump
         if (_jumpInput && (_isGrounded || _currentCoyoteTime > 0f)) {
@@ -240,8 +242,6 @@ public class PlayerMovement : MonoBehaviour
             newCamPos.y = _defaultCameraHeight;
         }
 
-        _crouchInput = false;
-
         // no clip
         if (_FreeFallZone == false)
             _horizontalVelocity += transform.up * _yInput;
@@ -251,7 +251,7 @@ public class PlayerMovement : MonoBehaviour
         if (_isGrounded && _isUncontrolledFalling) _isUncontrolledFalling = false;
         if (_isUncontrolledFalling) _horizontalVelocity = Vector3.zero; //cancel any non-vertical movement
 
-        bool _isOnStairs = false;
+        _isOnStairs = false;
         if (Physics.Raycast(transform.position, -transform.up, out var hit, 10000, LayerMask.GetMask("Floor")))
         {
             if (hit.normal != Vector3.up)
@@ -259,18 +259,25 @@ public class PlayerMovement : MonoBehaviour
                 _isOnStairs = true;
             }
         }
+    }
 
-        // apply calculated Movement
-        float moveSpeed = _currentMoveSpeed * _currentMoveSpeedFactor * (_isOnStairs ? _stairsSpeedMultiplier : 1);
-        if (_hasGravity) {
-            _controller.Move((_horizontalVelocity * ((_crouchInput ? moveSpeed : moveSpeed / _gameSettings.CrouchSpeed) * Time.deltaTime) + _externallyAppliedMovement) * (!_isGrounded ? _gameSettings.AirControl : 1.0f));
-            _controller.Move(_verticalVelocity * Time.deltaTime);
-        } else // no clip
+    private void Update()
+    {
+        if (_canMove)
         {
-            _controller.Move(_horizontalVelocity * ((moveSpeed / 10) * Time.deltaTime)
-                             + _externallyAppliedMovement);
+            // apply calculated Movement
+            float moveSpeed = _currentMoveSpeed * _currentMoveSpeedFactor * (_isOnStairs ? _stairsSpeedMultiplier : 1);
+            if (_hasGravity) {
+                _controller.Move((_horizontalVelocity * Time.deltaTime * ((_crouchInput ? moveSpeed : moveSpeed / _gameSettings.CrouchSpeed)) + _externallyAppliedMovement) * (!_isGrounded ? _gameSettings.AirControl : 1.0f));
+                _controller.Move(_verticalVelocity * Time.deltaTime);
+            } else // no clip
+            {
+                _controller.Move(_horizontalVelocity * ((moveSpeed / 10) * Time.deltaTime)
+                                 + _externallyAppliedMovement);
+            }
         }
 
+        _crouchInput = false;
         _pastHorizontalVelocity = _horizontalVelocity;
         ExecuteFootStep();
     }

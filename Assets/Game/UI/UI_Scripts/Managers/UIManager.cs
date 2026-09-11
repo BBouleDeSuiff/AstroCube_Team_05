@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using TMPro;
 
 
 public class UIManager : MonoBehaviour
@@ -9,6 +10,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private List<UIView> registeredViews = new List<UIView>();
 
     [SerializeField] private CinemachineVirtualCamera uiVirtualCamera;
+    [SerializeField] private TMP_Text _versionTxt;
 
     private readonly Dictionary<Type, UIView> _views = new();
 
@@ -25,6 +27,8 @@ public class UIManager : MonoBehaviour
             view.HideImmediate();
         }
         Time.timeScale = 1f;
+
+        _versionTxt.text = "Version " + Application.version;
     }
 
     public T GetView<T>() where T : UIView

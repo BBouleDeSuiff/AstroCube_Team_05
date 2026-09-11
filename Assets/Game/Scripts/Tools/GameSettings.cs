@@ -64,6 +64,7 @@ public class GameSettings : ScriptableObject
 
     public AnimationCurve C_MIN => C_Min;
     public AnimationCurve FailedRotationCurve => _failedRotationCurve;
+    public int MaxMemoryObjectsForAchievement => _maxMemoryObjectsForAchievement;
 
     [Header("-- PLAYER --")]
 
@@ -139,4 +140,5 @@ public class GameSettings : ScriptableObject
     [SerializeField] private float _maxTimeForAchievement;
     [SerializeField] private int _maxRotationsForAchievement;
     [SerializeField] private int _maxLockedRotationsForAchievement;
+    [SerializeField] private int _maxMemoryObjectsForAchievement;
 }

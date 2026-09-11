@@ -156,6 +156,11 @@ public class MemoryObject : MonoBehaviour, IInteractable
     {
         _outlineObject.SetActive(state);
     }
+
+    public void GrantAchievement(string id)
+    {
+        AchievementManager.Instance.UnlockAchievement(id);
+    }
 }
 
 [Serializable]
