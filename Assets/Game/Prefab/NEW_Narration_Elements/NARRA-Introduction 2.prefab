@@ -69,7 +69,7 @@ GameObject:
   - component: {fileID: 8108145374533207781}
   - component: {fileID: 4516625286669746164}
   m_Layer: 0
-  m_Name: '- wait 1,5s'
+  m_Name: '- wait 1.5s'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -151,7 +151,7 @@ MonoBehaviour:
   durationMode: 0
   waitTime: 1
   _inputToggleType: 1
-  _targetInputs: 32127
+  _targetInputs: 32255
 --- !u!1 &283296740921025178
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,7 +324,7 @@ GameObject:
   - component: {fileID: 2489248963197056662}
   - component: {fileID: 6462506258740124266}
   m_Layer: 0
-  m_Name: '- wait 0,5s'
+  m_Name: '- wait 0.5s'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -370,7 +370,7 @@ GameObject:
   - component: {fileID: 9216406004872676400}
   - component: {fileID: 4450970407909516307}
   m_Layer: 0
-  m_Name: '- wait 0,5s'
+  m_Name: '- wait 0.5s'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -416,7 +416,7 @@ GameObject:
   - component: {fileID: 4331581487171109030}
   - component: {fileID: 5669844893215587300}
   m_Layer: 0
-  m_Name: '- wait 0,5s'
+  m_Name: '- wait 0.5s'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -781,6 +781,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -802,9 +804,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!95 &5642455099614102636
 Animator:
@@ -830,7 +834,7 @@ Animator:
   m_WriteDefaultValuesOnDisable: 0
 --- !u!96 &6212340885168651015
 TrailRenderer:
-  serializedVersion: 3
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -849,6 +853,8 @@ TrailRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -870,9 +876,11 @@ TrailRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_Time: 0.5
   m_PreviewTimeScale: 1
   m_Parameters:
@@ -940,7 +948,6 @@ TrailRenderer:
     shadowBias: 0.5
     generateLightingData: 0
   m_MinVertexDistance: 0.1
-  m_MaskInteraction: 0
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 1
@@ -1166,6 +1173,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1187,9 +1196,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!95 &2257181944249088463
 Animator:
@@ -1318,7 +1329,7 @@ GameObject:
   - component: {fileID: 319324429506910996}
   - component: {fileID: 4446644395586228424}
   m_Layer: 0
-  m_Name: '- wait 0,5s'
+  m_Name: '- wait 0.5s'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1425,7 +1436,7 @@ GameObject:
   - component: {fileID: 7697283140508227043}
   - component: {fileID: 6806628472146411448}
   m_Layer: 0
-  m_Name: 'SUBTITLE 1,5s : <LVL0_VOICELINES:voM014_EN>'
+  m_Name: 'SUBTITLE 1.5s : <LVL0_VOICELINES:voM014_EN>'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1476,7 +1487,7 @@ GameObject:
   - component: {fileID: 7211104034944068268}
   - component: {fileID: 6454133146154176123}
   m_Layer: 0
-  m_Name: 'SUBTITLE 1,75s : <LVL0_VOICELINES:voM016_EN>'
+  m_Name: 'SUBTITLE 1.75s : <LVL0_VOICELINES:voM016_EN>'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6481,7 +6492,7 @@ ParticleSystem:
     vectorLabel1_3: W
 --- !u!199 &2604585580800071567
 ParticleSystemRenderer:
-  serializedVersion: 6
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -6500,6 +6511,8 @@ ParticleSystemRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6521,9 +6534,11 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_RenderMode: 4
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -6555,7 +6570,6 @@ ParticleSystemRenderer:
   m_MeshWeighting1: 1
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
-  m_MaskInteraction: 0
 --- !u!1 &4538419147471407673
 GameObject:
   m_ObjectHideFlags: 0
@@ -6567,7 +6581,7 @@ GameObject:
   - component: {fileID: 7457060008343247801}
   - component: {fileID: 7037926911540707250}
   m_Layer: 0
-  m_Name: 'SUBTITLE 3,5s : <LVL0_VOICELINES:voM004_EN>'
+  m_Name: 'SUBTITLE 3.5s : <LVL0_VOICELINES:voM004_EN>'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6649,14 +6663,14 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4730715127835540520}
   m_Enabled: 1
-  serializedVersion: 11
+  serializedVersion: 12
   m_Type: 2
   m_Color: {r: 0.35304657, g: 0.3215686, b: 1, a: 1}
   m_Intensity: 10
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
+  m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 0
     m_Resolution: -1
@@ -6726,6 +6740,9 @@ MonoBehaviour:
   m_LuxAtDistance: 1
   m_Intensity: 0
   m_InnerSpotPercent: 0
+  m_ShapeWidth: 0.5
+  m_ShapeHeight: 0.5
+  m_AspectRatio: 1
   m_SpotIESCutoffPercent: 100
   m_LightDimmer: 1
   m_VolumetricDimmer: 1
@@ -6734,9 +6751,6 @@ MonoBehaviour:
   m_AffectDiffuse: 1
   m_AffectSpecular: 1
   m_NonLightmappedOnly: 0
-  m_ShapeWidth: 0.5
-  m_ShapeHeight: 0.5
-  m_AspectRatio: 1
   m_ShapeRadius: 0.025
   m_SoftnessScale: 1
   m_UseCustomSpotLightShadowCone: 0
@@ -7171,7 +7185,7 @@ GameObject:
   - component: {fileID: 5284143822418974037}
   - component: {fileID: 1380966970080493561}
   m_Layer: 0
-  m_Name: '- wait 0,5s'
+  m_Name: '- wait 0.5s'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7217,7 +7231,7 @@ GameObject:
   - component: {fileID: 5555870881951723925}
   - component: {fileID: 1904999628419178110}
   m_Layer: 0
-  m_Name: '- wait 0,5s'
+  m_Name: '- wait 0.5s'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7314,7 +7328,7 @@ GameObject:
   - component: {fileID: 6569403146250657570}
   - component: {fileID: 6342193405419402115}
   m_Layer: 0
-  m_Name: '- wait 0,5s'
+  m_Name: '- wait 0.5s'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7360,7 +7374,7 @@ GameObject:
   - component: {fileID: 8420279795177853757}
   - component: {fileID: 7731648284498834486}
   m_Layer: 0
-  m_Name: '- wait 0,5s'
+  m_Name: '- wait 0.5s'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7406,7 +7420,7 @@ GameObject:
   - component: {fileID: 4971272006689340561}
   - component: {fileID: 4475765216936000611}
   m_Layer: 0
-  m_Name: '- wait 1,5s'
+  m_Name: '- wait 1.5s'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7452,7 +7466,7 @@ GameObject:
   - component: {fileID: 7974947784817586197}
   - component: {fileID: 3317071821015372623}
   m_Layer: 0
-  m_Name: '- wait 0,5s'
+  m_Name: '- wait 0.5s'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7545,7 +7559,7 @@ GameObject:
   - component: {fileID: 6566418394742438182}
   - component: {fileID: 8806586060856808497}
   m_Layer: 0
-  m_Name: '- wait 1,5s'
+  m_Name: '- wait 1.5s'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7770,14 +7784,14 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6509028193120910821}
   m_Enabled: 1
-  serializedVersion: 11
+  serializedVersion: 12
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 47.746483
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
+  m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 0
     m_Resolution: -1
@@ -7847,6 +7861,9 @@ MonoBehaviour:
   m_LuxAtDistance: 1
   m_Intensity: 0
   m_InnerSpotPercent: 0
+  m_ShapeWidth: 0.5
+  m_ShapeHeight: 0.5
+  m_AspectRatio: 1
   m_SpotIESCutoffPercent: 100
   m_LightDimmer: 1
   m_VolumetricDimmer: 1
@@ -7855,9 +7872,6 @@ MonoBehaviour:
   m_AffectDiffuse: 1
   m_AffectSpecular: 1
   m_NonLightmappedOnly: 0
-  m_ShapeWidth: 0.5
-  m_ShapeHeight: 0.5
-  m_AspectRatio: 1
   m_ShapeRadius: 0.025
   m_SoftnessScale: 1
   m_UseCustomSpotLightShadowCone: 0
@@ -8191,7 +8205,7 @@ GameObject:
   - component: {fileID: 1146494913964449478}
   - component: {fileID: 7167532076028883669}
   m_Layer: 0
-  m_Name: 'SUBTITLE 3,5s : <LVL0_VOICELINES:voM008_EN>'
+  m_Name: 'SUBTITLE 3.5s : <LVL0_VOICELINES:voM008_EN>'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8242,7 +8256,7 @@ GameObject:
   - component: {fileID: 1376653730091826439}
   - component: {fileID: 5774466264612025746}
   m_Layer: 0
-  m_Name: 'SUBTITLE 1,5s : <LVL0_VOICELINES:voM007_EN>'
+  m_Name: 'SUBTITLE 1.5s : <LVL0_VOICELINES:voM007_EN>'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8400,7 +8414,7 @@ GameObject:
   - component: {fileID: 2274808584581433916}
   - component: {fileID: 5667482112747410788}
   m_Layer: 0
-  m_Name: '- wait 0,5s'
+  m_Name: '- wait 0.5s'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8562,7 +8576,7 @@ GameObject:
   - component: {fileID: 4819280265704561691}
   - component: {fileID: 3076862379197576025}
   m_Layer: 0
-  m_Name: 'SUBTITLE 3,5s : <LVL0_VOICELINES:voM006_EN>'
+  m_Name: 'SUBTITLE 3.5s : <LVL0_VOICELINES:voM006_EN>'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8613,7 +8627,7 @@ GameObject:
   - component: {fileID: 6542968827732273249}
   - component: {fileID: 7251334904371460010}
   m_Layer: 0
-  m_Name: '- wait 0,5s'
+  m_Name: '- wait 0.5s'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8757,7 +8771,7 @@ GameObject:
   - component: {fileID: 907736656561738544}
   - component: {fileID: 4542438070447161005}
   m_Layer: 0
-  m_Name: 'SUBTITLE 2,5s : <LVL0_VOICELINES:voM013_EN>'
+  m_Name: 'SUBTITLE 2.5s : <LVL0_VOICELINES:voM013_EN>'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9075,7 +9089,7 @@ GameObject:
   - component: {fileID: 4572097383830542541}
   - component: {fileID: 542613402678427082}
   m_Layer: 0
-  m_Name: 'SUBTITLE 2,25s : <LVL0_VOICELINES:voM014_EN>'
+  m_Name: 'SUBTITLE 2.25s : <LVL0_VOICELINES:voM014_EN>'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13919,7 +13933,7 @@ ParticleSystem:
     vectorLabel1_3: W
 --- !u!199 &3616469927965510950
 ParticleSystemRenderer:
-  serializedVersion: 6
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -13938,6 +13952,8 @@ ParticleSystemRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -13959,9 +13975,11 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_RenderMode: 1
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -13993,7 +14011,6 @@ ParticleSystemRenderer:
   m_MeshWeighting1: 1
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
-  m_MaskInteraction: 0
 --- !u!1 &8830305805948415252
 GameObject:
   m_ObjectHideFlags: 0
@@ -14145,7 +14162,7 @@ GameObject:
   - component: {fileID: 1850941930797067012}
   - component: {fileID: 9066285702841685232}
   m_Layer: 0
-  m_Name: '- wait 0,75s'
+  m_Name: '- wait 0.75s'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
