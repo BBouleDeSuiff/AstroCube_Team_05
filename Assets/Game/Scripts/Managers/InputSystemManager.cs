@@ -35,7 +35,6 @@ public class InputSystemManager : MonoBehaviour
         SHOW_STRIPS = 1 << 6,
         GAME_PAUSE = 1 << 7,
         INTERACT = 1 << 8,
-        PAUSE_GAME = 1 << 9,
         MOVEMENT = 1 << 10,
         CAMERA = 1 << 11,
         SEE_EXIT = 1 << 12,
@@ -95,8 +94,6 @@ public class InputSystemManager : MonoBehaviour
                 return("GamePause");
             case EInputType.INTERACT:
                 return("Interact");
-            case EInputType.PAUSE_GAME:
-                return("PauseGame");
             case EInputType.MOVEMENT:
                 return("Movement");
             case EInputType.CAMERA:
