@@ -27,6 +27,7 @@ public class InputDisplay : MonoBehaviour
     [InfoBox("If false, input display should be stopped by code", EInfoBoxType.Normal)]
     [SerializeField] bool _resolveAutomaticallyOnInput = true;
     [SerializeField] bool _resolveOnLeaveTrigger = false;
+    [SerializeField] bool _hideUponLeaveTrigger = false;
     [SerializeField, ShowIf("_resolveAutomaticallyOnInput")] List<EInputType> _expectedInput1;
 
     [SerializeField] UnityEvent _onStartShowText;
@@ -122,10 +123,13 @@ public class InputDisplay : MonoBehaviour
         if (!other.CompareTag("Player")) return;
 
         if (_resolveOnLeaveTrigger)
-            _EndDisplay();
-        else
         {
-            _isDisplayed = false;
+            _hasBeenCompleted = true;
+            _EndDisplay();
+        }
+        else if (_hideUponLeaveTrigger)
+        {
+            _EndDisplay();
         }
     }
     private void _End(InputAction.CallbackContext callbackContext) => _End();
@@ -148,7 +152,7 @@ public class InputDisplay : MonoBehaviour
     private void _EndDisplay()
     {
         if (_hasBeenCompleted) return;
-        _hasBeenCompleted = true;
+        
         if (_animate)
         {
             if (_animator) _animator.SetTrigger("EndDisplay");
