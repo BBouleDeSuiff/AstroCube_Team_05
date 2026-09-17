@@ -89,8 +89,8 @@ public class PlayerMovement : MonoBehaviour
     {
         _gameSettings = GameManager.Instance.Settings;
 
-        if (TryGetComponent<DetectNewParent>(out var detectParent))
-            detectParent.DoGravityRotation = _gameSettings.EnableGravityRotation;
+        /*if (TryGetComponent<DetectNewParent>(out var detectParent))
+            detectParent.DoGravityRotation = _gameSettings.EnableGravityRotation;*/
 
         _defaultCameraHeight = _camera.localPosition.y;
         _defaultControllerHeight = _controller.height;
@@ -215,7 +215,7 @@ public class PlayerMovement : MonoBehaviour
             _verticalVelocity = transform.up * jumpForce;
             _currentCoyoteTime = 0f;
             _jumpCooldownTimer = 0.2f; // <-- Prevents ground check from triggering for 200ms
-            _isGrounded = false;       // <-- Immediately break grounded state
+            _isGrounded = false;      
 
             if (_stepDetection != null) _stepDetection.Jump();
         }
