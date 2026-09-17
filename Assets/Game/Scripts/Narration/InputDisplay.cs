@@ -15,6 +15,7 @@ public class InputDisplay : MonoBehaviour
     {
         PLAY_ON_TRIGGER,
         PLAY_AT_START,
+        PLAY_AT_CALL,
         PLAY_ON_EVENT
     }
 
