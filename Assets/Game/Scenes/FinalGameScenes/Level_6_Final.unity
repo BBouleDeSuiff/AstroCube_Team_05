@@ -46555,13 +46555,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28cced665a6f1fc4b928b28c83c2e146, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _displayType: 0
+  _displayType: 3
   _fadeInDuration: 1
   _fadeOutDuration: 0.5
   _canvasGroup: {fileID: 1303124064}
   _fadeEase: 1
   _resolveAutomaticallyOnInput: 1
   _resolveOnLeaveTrigger: 0
+  _hideUponLeaveTrigger: 1
   _expectedInput1: 00010000
   _onStartShowText:
     m_PersistentCalls:

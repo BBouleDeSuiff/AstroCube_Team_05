@@ -23,11 +23,13 @@ public class PlayerInteraction : MonoBehaviour
         {
             _currentInteractable = hit.collider.GetComponent<IInteractable>();
             _currentInteractable.SetOutline(true);
+            EventManager.TriggerIsPlayerLookingAtInteractableObject(true);
         }
         else if(_currentInteractable != null)
         {
             _currentInteractable.SetOutline(false);
             _currentInteractable = null;
+            EventManager.TriggerIsPlayerLookingAtInteractableObject(false);
         }
     }
 

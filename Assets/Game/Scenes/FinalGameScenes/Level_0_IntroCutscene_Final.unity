@@ -1371,6 +1371,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 28189408900664097, guid: e0c85bf540713094da1c4173f8b550de,
+        type: 3}
+      propertyPath: field of view
+      value: 58.76847
+      objectReference: {fileID: 0}
     - target: {fileID: 288069292129833314, guid: e0c85bf540713094da1c4173f8b550de,
         type: 3}
       propertyPath: m_Enabled
@@ -1510,6 +1515,11 @@ PrefabInstance:
         type: 3}
       propertyPath: playOnAwake
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182518443189061664, guid: e0c85bf540713094da1c4173f8b550de,
+        type: 3}
+      propertyPath: m_Lens.FieldOfView
+      value: 58.76847
       objectReference: {fileID: 0}
     - target: {fileID: 3294190792987505142, guid: e0c85bf540713094da1c4173f8b550de,
         type: 3}
@@ -5933,7 +5943,7 @@ SphereCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Radius: 5.8107324
   m_Center: {x: -6.02564e-10, y: 0.3196026, z: -1.4911288}
@@ -5949,13 +5959,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28cced665a6f1fc4b928b28c83c2e146, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _displayType: 0
+  _displayType: 3
   _fadeInDuration: 1
   _fadeOutDuration: 0.5
   _canvasGroup: {fileID: 951416534}
   _fadeEase: 1
   _resolveAutomaticallyOnInput: 1
   _resolveOnLeaveTrigger: 0
+  _hideUponLeaveTrigger: 1
   _expectedInput1: 00010000
   _onStartShowText:
     m_PersistentCalls:
