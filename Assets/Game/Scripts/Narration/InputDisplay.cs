@@ -15,7 +15,7 @@ public class InputDisplay : MonoBehaviour
     {
         PLAY_ON_TRIGGER,
         PLAY_AT_START,
-        PLAY_ON_CALL
+        PLAY_ON_EVENT
     }
 
     [SerializeField] EDisplayType _displayType;
@@ -65,6 +65,8 @@ public class InputDisplay : MonoBehaviour
 
     private void OnEnable()
     {
+        if(_displayType == EDisplayType.PLAY_ON_EVENT) EventManager.OnIsPlayerLookingAtInteractableObject += UpdateUIVisibility;
+        
         if (!_canvasGroup) return;
 
         if (_resolveAutomaticallyOnInput)
@@ -82,6 +84,8 @@ public class InputDisplay : MonoBehaviour
 
     private void OnDisable()
     {
+        if (_displayType == EDisplayType.PLAY_ON_EVENT) EventManager.OnIsPlayerLookingAtInteractableObject -= UpdateUIVisibility;
+
         if (!_canvasGroup) return;
 
         if (_resolveAutomaticallyOnInput)
@@ -103,25 +107,26 @@ public class InputDisplay : MonoBehaviour
             _colider.enabled = _displayType == EDisplayType.PLAY_ON_TRIGGER;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void UpdateUIVisibility(bool new_activation)
+    {
+        if (new_activation == _isDisplayed) return;
+
+        if (new_activation == true) ActivateDisplayText();
+        if (new_activation == false) DeactivateDisplayText();
+    }
+
+    private void ActivateDisplayText()
     {
         if (_hasBeenCompleted) return;
-        if (_displayType != EDisplayType.PLAY_ON_TRIGGER) return;
         if (!_canvasGroup) return;
-
-        if (!other.CompareTag("Player")) return;
-
         if (_isDisplayed) return;
         StartDisplay();
     }
 
-    private void OnTriggerExit(Collider other)
+    private void DeactivateDisplayText()
     {
-        if (_displayType != EDisplayType.PLAY_ON_TRIGGER) return;
+        
         if (!_canvasGroup) return;
-
-        if (!other.CompareTag("Player")) return;
-
         if (_resolveOnLeaveTrigger)
         {
             _hasBeenCompleted = true;
@@ -131,6 +136,20 @@ public class InputDisplay : MonoBehaviour
         {
             _EndDisplay();
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (!other.CompareTag("Player")) return;
+        if (_displayType != EDisplayType.PLAY_ON_TRIGGER) return;
+        ActivateDisplayText();
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (!other.CompareTag("Player")) return;
+        if (_displayType != EDisplayType.PLAY_ON_TRIGGER) return;
+        DeactivateDisplayText();
     }
     private void _End(InputAction.CallbackContext callbackContext) => _End();
 
