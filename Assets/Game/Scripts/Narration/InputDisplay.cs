@@ -15,7 +15,8 @@ public class InputDisplay : MonoBehaviour
     {
         PLAY_ON_TRIGGER,
         PLAY_AT_START,
-        PLAY_ON_CALL
+        PLAY_AT_CALL,
+        PLAY_ON_EVENT
     }
 
     [SerializeField] EDisplayType _displayType;
@@ -27,6 +28,7 @@ public class InputDisplay : MonoBehaviour
     [InfoBox("If false, input display should be stopped by code", EInfoBoxType.Normal)]
     [SerializeField] bool _resolveAutomaticallyOnInput = true;
     [SerializeField] bool _resolveOnLeaveTrigger = false;
+    [SerializeField] bool _hideUponLeaveTrigger = false;
     [SerializeField, ShowIf("_resolveAutomaticallyOnInput")] List<EInputType> _expectedInput1;
 
     [SerializeField] UnityEvent _onStartShowText;
@@ -64,6 +66,8 @@ public class InputDisplay : MonoBehaviour
 
     private void OnEnable()
     {
+        if(_displayType == EDisplayType.PLAY_ON_EVENT) EventManager.OnIsPlayerLookingAtInteractableObject += UpdateUIVisibility;
+        
         if (!_canvasGroup) return;
 
         if (_resolveAutomaticallyOnInput)
@@ -81,6 +85,8 @@ public class InputDisplay : MonoBehaviour
 
     private void OnDisable()
     {
+        if (_displayType == EDisplayType.PLAY_ON_EVENT) EventManager.OnIsPlayerLookingAtInteractableObject -= UpdateUIVisibility;
+
         if (!_canvasGroup) return;
 
         if (_resolveAutomaticallyOnInput)
@@ -102,31 +108,49 @@ public class InputDisplay : MonoBehaviour
             _colider.enabled = _displayType == EDisplayType.PLAY_ON_TRIGGER;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void UpdateUIVisibility(bool new_activation)
+    {
+        if (new_activation == _isDisplayed) return;
+
+        if (new_activation == true) ActivateDisplayText();
+        if (new_activation == false) DeactivateDisplayText();
+    }
+
+    private void ActivateDisplayText()
     {
         if (_hasBeenCompleted) return;
-        if (_displayType != EDisplayType.PLAY_ON_TRIGGER) return;
         if (!_canvasGroup) return;
-
-        if (!other.CompareTag("Player")) return;
-
         if (_isDisplayed) return;
         StartDisplay();
     }
 
+    private void DeactivateDisplayText()
+    {
+        
+        if (!_canvasGroup) return;
+        if (_resolveOnLeaveTrigger)
+        {
+            _hasBeenCompleted = true;
+            _EndDisplay();
+        }
+        else if (_hideUponLeaveTrigger)
+        {
+            _EndDisplay();
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (!other.CompareTag("Player")) return;
+        if (_displayType != EDisplayType.PLAY_ON_TRIGGER) return;
+        ActivateDisplayText();
+    }
+
     private void OnTriggerExit(Collider other)
     {
-        if (_displayType != EDisplayType.PLAY_ON_TRIGGER) return;
-        if (!_canvasGroup) return;
-
         if (!other.CompareTag("Player")) return;
-
-        if (_resolveOnLeaveTrigger)
-            _EndDisplay();
-        else
-        {
-            _isDisplayed = false;
-        }
+        if (_displayType != EDisplayType.PLAY_ON_TRIGGER) return;
+        DeactivateDisplayText();
     }
     private void _End(InputAction.CallbackContext callbackContext) => _End();
 
@@ -148,7 +172,7 @@ public class InputDisplay : MonoBehaviour
     private void _EndDisplay()
     {
         if (_hasBeenCompleted) return;
-        _hasBeenCompleted = true;
+        
         if (_animate)
         {
             if (_animator) _animator.SetTrigger("EndDisplay");

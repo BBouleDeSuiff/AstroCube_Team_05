@@ -194,6 +194,59 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7455cc2b6b74a4a43898509894502a30, type: 3}
+--- !u!1 &3811679
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3811680}
+  - component: {fileID: 3811681}
+  m_Layer: 0
+  m_Name: Collider to prevent walking on furniture (19)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3811680
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3811679}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.46806598, z: -0, w: 0.8836935}
+  m_LocalPosition: {x: -3.629, y: -1.228, z: -4.055}
+  m_LocalScale: {x: 0.37529084, y: 1.1210498, z: 0.3826322}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 871293519}
+  m_LocalEulerAnglesHint: {x: 0, y: -55.818, z: 0}
+--- !u!65 &3811681
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3811679}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &4246981
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1318,6 +1371,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 28189408900664097, guid: e0c85bf540713094da1c4173f8b550de,
+        type: 3}
+      propertyPath: field of view
+      value: 58.76847
+      objectReference: {fileID: 0}
     - target: {fileID: 288069292129833314, guid: e0c85bf540713094da1c4173f8b550de,
         type: 3}
       propertyPath: m_Enabled
@@ -1457,6 +1515,11 @@ PrefabInstance:
         type: 3}
       propertyPath: playOnAwake
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182518443189061664, guid: e0c85bf540713094da1c4173f8b550de,
+        type: 3}
+      propertyPath: m_Lens.FieldOfView
+      value: 58.76847
       objectReference: {fileID: 0}
     - target: {fileID: 3294190792987505142, guid: e0c85bf540713094da1c4173f8b550de,
         type: 3}
@@ -1965,6 +2028,59 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 62883204}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &65033958
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 65033959}
+  - component: {fileID: 65033960}
+  m_Layer: 0
+  m_Name: Collider to prevent walking on furniture (14)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &65033959
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65033958}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.46806598, z: -0, w: 0.8836935}
+  m_LocalPosition: {x: -2.032, y: -1.228, z: -7.092}
+  m_LocalScale: {x: 0.20401996, y: 0.7793108, z: 0.17243186}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 871293519}
+  m_LocalEulerAnglesHint: {x: 0, y: -55.818, z: 0}
+--- !u!65 &65033960
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65033958}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &66439013
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2773,6 +2889,59 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 94371485}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &96820754
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 96820755}
+  - component: {fileID: 96820756}
+  m_Layer: 0
+  m_Name: Collider to prevent walking on furniture (23)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &96820755
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96820754}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.70755637, z: -0, w: 0.70665693}
+  m_LocalPosition: {x: 2.258, y: -1.228, z: -7.854}
+  m_LocalScale: {x: 0.35734445, y: 1.0674412, z: 0.36433476}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 871293519}
+  m_LocalEulerAnglesHint: {x: 0, y: -90.073, z: 0}
+--- !u!65 &96820756
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96820754}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &100873933
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4142,6 +4311,59 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 351591308}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &165523732
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 165523733}
+  - component: {fileID: 165523734}
+  m_Layer: 0
+  m_Name: Collider to prevent walking on furniture (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &165523733
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165523732}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.09706828, z: -0, w: 0.9952777}
+  m_LocalPosition: {x: -2.164, y: -0.23000002, z: -0.791}
+  m_LocalScale: {x: 0.83748883, y: 0.60225, z: 0.24656348}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 871293519}
+  m_LocalEulerAnglesHint: {x: 0, y: -11.141, z: 0}
+--- !u!65 &165523734
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165523732}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &166842508
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5454,6 +5676,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e780ee219c77eb4e83886eb85df0531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &223939259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 223939260}
+  - component: {fileID: 223939261}
+  m_Layer: 0
+  m_Name: Collider to prevent walking on furniture (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &223939260
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223939259}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.6931828, z: -0, w: 0.72076184}
+  m_LocalPosition: {x: -1.776, y: -0.23, z: -0.603}
+  m_LocalScale: {x: 0.83748883, y: 0.60225, z: 0.24656348}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 871293519}
+  m_LocalEulerAnglesHint: {x: 0, y: 87.765, z: 0}
+--- !u!65 &223939261
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223939259}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &227569909
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5668,7 +5943,7 @@ SphereCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Radius: 5.8107324
   m_Center: {x: -6.02564e-10, y: 0.3196026, z: -1.4911288}
@@ -5684,13 +5959,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28cced665a6f1fc4b928b28c83c2e146, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _displayType: 0
+  _displayType: 3
   _fadeInDuration: 1
   _fadeOutDuration: 0.5
   _canvasGroup: {fileID: 951416534}
   _fadeEase: 1
   _resolveAutomaticallyOnInput: 1
   _resolveOnLeaveTrigger: 0
+  _hideUponLeaveTrigger: 1
   _expectedInput1: 00010000
   _onStartShowText:
     m_PersistentCalls:
@@ -6156,6 +6432,112 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8eca499d70e5c134981c869d21466c80, type: 3}
+--- !u!1 &245715637
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 245715638}
+  - component: {fileID: 245715639}
+  m_Layer: 0
+  m_Name: Collider to prevent walking on furniture (9)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &245715638
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245715637}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.40565273, z: -0, w: 0.91402733}
+  m_LocalPosition: {x: -0.652, y: -0.12600003, z: -0.106}
+  m_LocalScale: {x: 0.58694595, y: 1, z: 0.3391951}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 871293519}
+  m_LocalEulerAnglesHint: {x: 0, y: 47.864, z: 0}
+--- !u!65 &245715639
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245715637}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &248601150
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 248601151}
+  - component: {fileID: 248601152}
+  m_Layer: 0
+  m_Name: Collider to prevent walking on furniture (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &248601151
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248601150}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.7546845, z: -0, w: 0.65608793}
+  m_LocalPosition: {x: -1.552, y: -0.23000002, z: -0.734}
+  m_LocalScale: {x: 0.2455879, y: 0.60225, z: 0.24656348}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 871293519}
+  m_LocalEulerAnglesHint: {x: 0, y: -97.996, z: 0}
+--- !u!65 &248601152
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248601150}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &250109902
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14306,6 +14688,100 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 557427820}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &557797618
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 902217509}
+    m_Modifications:
+    - target: {fileID: 4781653443411505577, guid: 4f2912650bc0b0c458e74658ad7bc758,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781653443411505577, guid: 4f2912650bc0b0c458e74658ad7bc758,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781653443411505577, guid: 4f2912650bc0b0c458e74658ad7bc758,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781653443411505577, guid: 4f2912650bc0b0c458e74658ad7bc758,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.059
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781653443411505577, guid: 4f2912650bc0b0c458e74658ad7bc758,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.541
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781653443411505577, guid: 4f2912650bc0b0c458e74658ad7bc758,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.468
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781653443411505577, guid: 4f2912650bc0b0c458e74658ad7bc758,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.00026793778
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781653443411505577, guid: 4f2912650bc0b0c458e74658ad7bc758,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781653443411505577, guid: 4f2912650bc0b0c458e74658ad7bc758,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781653443411505577, guid: 4f2912650bc0b0c458e74658ad7bc758,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781653443411505577, guid: 4f2912650bc0b0c458e74658ad7bc758,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781653443411505577, guid: 4f2912650bc0b0c458e74658ad7bc758,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781653443411505577, guid: 4f2912650bc0b0c458e74658ad7bc758,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781653443411505577, guid: 4f2912650bc0b0c458e74658ad7bc758,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5264717672886610707, guid: 4f2912650bc0b0c458e74658ad7bc758,
+        type: 3}
+      propertyPath: m_Name
+      value: pot_001 (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f2912650bc0b0c458e74658ad7bc758, type: 3}
+--- !u!4 &557797619 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4781653443411505577, guid: 4f2912650bc0b0c458e74658ad7bc758,
+    type: 3}
+  m_PrefabInstance: {fileID: 557797618}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &560493136
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14656,6 +15132,59 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 721a4348b29865c458fc239b698532da, type: 3}
+--- !u!1 &570542995
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 570542996}
+  - component: {fileID: 570542997}
+  m_Layer: 0
+  m_Name: Collider to prevent walking on furniture (11)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &570542996
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570542995}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.0006596421, z: -0, w: 0.99999976}
+  m_LocalPosition: {x: -1.976, y: -0.12600003, z: 0.79}
+  m_LocalScale: {x: 0.58694595, y: 1, z: 0.3391951}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 871293519}
+  m_LocalEulerAnglesHint: {x: 0, y: 0.076, z: 0}
+--- !u!65 &570542997
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570542995}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &573408623
 GameObject:
   m_ObjectHideFlags: 0
@@ -16729,6 +17258,59 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a233597a9a89fe04292b40f76eb8e449, type: 3}
+--- !u!1 &698608550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 698608551}
+  - component: {fileID: 698608552}
+  m_Layer: 0
+  m_Name: Collider to prevent walking on furniture (10)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &698608551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698608550}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.0006596421, z: -0, w: 0.99999976}
+  m_LocalPosition: {x: -2.298, y: -0.12600003, z: 0.821}
+  m_LocalScale: {x: 0.58694595, y: 1, z: 0.3391951}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 871293519}
+  m_LocalEulerAnglesHint: {x: 0, y: 0.076, z: 0}
+--- !u!65 &698608552
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698608550}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &700962346
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16962,6 +17544,59 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2efa78465e1e1e4ca09f60974592440, type: 3}
+--- !u!1 &707394286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 707394287}
+  - component: {fileID: 707394288}
+  m_Layer: 0
+  m_Name: Collider to prevent walking on furniture (15)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &707394287
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707394286}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.46806598, z: -0, w: 0.8836935}
+  m_LocalPosition: {x: -1.762, y: -1.228, z: -7.206}
+  m_LocalScale: {x: 0.20965272, y: 0.8688536, z: 0.22048545}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 871293519}
+  m_LocalEulerAnglesHint: {x: 0, y: -55.818, z: 0}
+--- !u!65 &707394288
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707394286}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &709368837
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20415,6 +21050,32 @@ Transform:
   - {fileID: 1889354608}
   - {fileID: 998475729}
   - {fileID: 71779221}
+  - {fileID: 1651022385}
+  - {fileID: 245715638}
+  - {fileID: 698608551}
+  - {fileID: 570542996}
+  - {fileID: 1828399703}
+  - {fileID: 1862759860}
+  - {fileID: 223939260}
+  - {fileID: 165523733}
+  - {fileID: 1160131198}
+  - {fileID: 1451853076}
+  - {fileID: 248601151}
+  - {fileID: 1301292258}
+  - {fileID: 1432304804}
+  - {fileID: 1825490280}
+  - {fileID: 65033959}
+  - {fileID: 707394287}
+  - {fileID: 2064143362}
+  - {fileID: 1779477040}
+  - {fileID: 1789421829}
+  - {fileID: 3811680}
+  - {fileID: 1532582407}
+  - {fileID: 1703720585}
+  - {fileID: 96820755}
+  - {fileID: 950989358}
+  - {fileID: 2086481870}
+  - {fileID: 1902752531}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -179.969, z: 0}
 --- !u!4 &872539547 stripped
@@ -21226,6 +21887,100 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _surfaceType: 3
+--- !u!1001 &909871220
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 902217509}
+    m_Modifications:
+    - target: {fileID: 4781653443411505577, guid: 4f2912650bc0b0c458e74658ad7bc758,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781653443411505577, guid: 4f2912650bc0b0c458e74658ad7bc758,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781653443411505577, guid: 4f2912650bc0b0c458e74658ad7bc758,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781653443411505577, guid: 4f2912650bc0b0c458e74658ad7bc758,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.9365
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781653443411505577, guid: 4f2912650bc0b0c458e74658ad7bc758,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.541
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781653443411505577, guid: 4f2912650bc0b0c458e74658ad7bc758,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.204
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781653443411505577, guid: 4f2912650bc0b0c458e74658ad7bc758,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.00026793778
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781653443411505577, guid: 4f2912650bc0b0c458e74658ad7bc758,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781653443411505577, guid: 4f2912650bc0b0c458e74658ad7bc758,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781653443411505577, guid: 4f2912650bc0b0c458e74658ad7bc758,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781653443411505577, guid: 4f2912650bc0b0c458e74658ad7bc758,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781653443411505577, guid: 4f2912650bc0b0c458e74658ad7bc758,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781653443411505577, guid: 4f2912650bc0b0c458e74658ad7bc758,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781653443411505577, guid: 4f2912650bc0b0c458e74658ad7bc758,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5264717672886610707, guid: 4f2912650bc0b0c458e74658ad7bc758,
+        type: 3}
+      propertyPath: m_Name
+      value: pot_001 (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f2912650bc0b0c458e74658ad7bc758, type: 3}
+--- !u!4 &909871221 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4781653443411505577, guid: 4f2912650bc0b0c458e74658ad7bc758,
+    type: 3}
+  m_PrefabInstance: {fileID: 909871220}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &909903591
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22790,6 +23545,59 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1201443916}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &950989357
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 950989358}
+  - component: {fileID: 950989359}
+  m_Layer: 0
+  m_Name: Collider to prevent walking on furniture (24)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &950989358
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950989357}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.70755637, z: -0, w: 0.70665693}
+  m_LocalPosition: {x: 3.756, y: -1.228, z: -5.1173}
+  m_LocalScale: {x: 0.35734445, y: 1.0674412, z: 0.36433476}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 871293519}
+  m_LocalEulerAnglesHint: {x: 0, y: -90.073, z: 0}
+--- !u!65 &950989359
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950989357}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &951416533
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25045,7 +25853,7 @@ PrefabInstance:
     - target: {fileID: 529472527236265940, guid: 8709ef70e0472f144b0029c8db975f43,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.61
+      value: -0.48189038
       objectReference: {fileID: 0}
     - target: {fileID: 621172166502360205, guid: 8709ef70e0472f144b0029c8db975f43,
         type: 3}
@@ -25210,17 +26018,17 @@ PrefabInstance:
     - target: {fileID: 2146648308499499755, guid: 8709ef70e0472f144b0029c8db975f43,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.391
+      value: 5.328
       objectReference: {fileID: 0}
     - target: {fileID: 2146648308499499755, guid: 8709ef70e0472f144b0029c8db975f43,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.295
+      value: -0.222
       objectReference: {fileID: 0}
     - target: {fileID: 2146648308499499755, guid: 8709ef70e0472f144b0029c8db975f43,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.527
+      value: 2.48
       objectReference: {fileID: 0}
     - target: {fileID: 2472897215210089632, guid: 8709ef70e0472f144b0029c8db975f43,
         type: 3}
@@ -25300,7 +26108,7 @@ PrefabInstance:
     - target: {fileID: 2770349566009692123, guid: 8709ef70e0472f144b0029c8db975f43,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.4
+      value: -5.496
       objectReference: {fileID: 0}
     - target: {fileID: 2770349566009692123, guid: 8709ef70e0472f144b0029c8db975f43,
         type: 3}
@@ -25310,7 +26118,7 @@ PrefabInstance:
     - target: {fileID: 2770349566009692123, guid: 8709ef70e0472f144b0029c8db975f43,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.7
+      value: 3.454
       objectReference: {fileID: 0}
     - target: {fileID: 2930401071273777705, guid: 8709ef70e0472f144b0029c8db975f43,
         type: 3}
@@ -25855,7 +26663,7 @@ PrefabInstance:
     - target: {fileID: 6044480759878938936, guid: 8709ef70e0472f144b0029c8db975f43,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.627
+      value: -0.51
       objectReference: {fileID: 0}
     - target: {fileID: 6044480759878938936, guid: 8709ef70e0472f144b0029c8db975f43,
         type: 3}
@@ -26110,7 +26918,7 @@ PrefabInstance:
     - target: {fileID: 8271174128720988471, guid: 8709ef70e0472f144b0029c8db975f43,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.4
+      value: -6.424
       objectReference: {fileID: 0}
     - target: {fileID: 8271174128720988471, guid: 8709ef70e0472f144b0029c8db975f43,
         type: 3}
@@ -26120,7 +26928,7 @@ PrefabInstance:
     - target: {fileID: 8271174128720988471, guid: 8709ef70e0472f144b0029c8db975f43,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.7
+      value: 3.628
       objectReference: {fileID: 0}
     - target: {fileID: 8314205425583594728, guid: 8709ef70e0472f144b0029c8db975f43,
         type: 3}
@@ -26505,6 +27313,7 @@ PrefabInstance:
     - {fileID: 7619556672907547041, guid: 8709ef70e0472f144b0029c8db975f43, type: 3}
     - {fileID: 4535077165737827506, guid: 8709ef70e0472f144b0029c8db975f43, type: 3}
     - {fileID: 5662971344382211490, guid: 8709ef70e0472f144b0029c8db975f43, type: 3}
+    - {fileID: 1621786178371850321, guid: 8709ef70e0472f144b0029c8db975f43, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 4270751136949031165, guid: 8709ef70e0472f144b0029c8db975f43,
         type: 3}
@@ -26578,6 +27387,18 @@ PrefabInstance:
         type: 3}
       insertIndex: 38
       addedObject: {fileID: 1797345083}
+    - targetCorrespondingSourceObject: {fileID: 3335472421299565042, guid: 8709ef70e0472f144b0029c8db975f43,
+        type: 3}
+      insertIndex: 40
+      addedObject: {fileID: 1195153945}
+    - targetCorrespondingSourceObject: {fileID: 3335472421299565042, guid: 8709ef70e0472f144b0029c8db975f43,
+        type: 3}
+      insertIndex: 43
+      addedObject: {fileID: 909871221}
+    - targetCorrespondingSourceObject: {fileID: 3335472421299565042, guid: 8709ef70e0472f144b0029c8db975f43,
+        type: 3}
+      insertIndex: 44
+      addedObject: {fileID: 557797619}
     - targetCorrespondingSourceObject: {fileID: 6789161853085682361, guid: 8709ef70e0472f144b0029c8db975f43,
         type: 3}
       insertIndex: 4
@@ -30603,6 +31424,59 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1151523926}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1160131197
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1160131198}
+  - component: {fileID: 1160131199}
+  m_Layer: 0
+  m_Name: Collider to prevent walking on furniture (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1160131198
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160131197}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.47209877, z: -0, w: 0.88154566}
+  m_LocalPosition: {x: -1.8750091, y: -0.23000002, z: -0.66300255}
+  m_LocalScale: {x: 0.31738314, y: 0.60225, z: 0.24656348}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 871293519}
+  m_LocalEulerAnglesHint: {x: 0, y: -56.341, z: 0}
+--- !u!65 &1160131199
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160131197}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1160908191 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4392756407082238738, guid: c2efa78465e1e1e4ca09f60974592440,
@@ -31357,6 +32231,100 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7455cc2b6b74a4a43898509894502a30, type: 3}
+--- !u!1001 &1195153944
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 902217509}
+    m_Modifications:
+    - target: {fileID: 8428407438595428714, guid: e59bf0c4011325a49b7cff008dfb150f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428407438595428714, guid: e59bf0c4011325a49b7cff008dfb150f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428407438595428714, guid: e59bf0c4011325a49b7cff008dfb150f,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428407438595428714, guid: e59bf0c4011325a49b7cff008dfb150f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.341
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428407438595428714, guid: e59bf0c4011325a49b7cff008dfb150f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.255
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428407438595428714, guid: e59bf0c4011325a49b7cff008dfb150f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.474
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428407438595428714, guid: e59bf0c4011325a49b7cff008dfb150f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6187757
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428407438595428714, guid: e59bf0c4011325a49b7cff008dfb150f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428407438595428714, guid: e59bf0c4011325a49b7cff008dfb150f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7855677
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428407438595428714, guid: e59bf0c4011325a49b7cff008dfb150f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428407438595428714, guid: e59bf0c4011325a49b7cff008dfb150f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428407438595428714, guid: e59bf0c4011325a49b7cff008dfb150f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 103.546
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428407438595428714, guid: e59bf0c4011325a49b7cff008dfb150f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428407438595428714, guid: e59bf0c4011325a49b7cff008dfb150f,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9204345282291944400, guid: e59bf0c4011325a49b7cff008dfb150f,
+        type: 3}
+      propertyPath: m_Name
+      value: 3d_hibiscus_02 (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e59bf0c4011325a49b7cff008dfb150f, type: 3}
+--- !u!4 &1195153945 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8428407438595428714, guid: e59bf0c4011325a49b7cff008dfb150f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1195153944}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1196655998
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34004,6 +34972,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8aa7046ad0ba7d4e97642524189469b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1301292257
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1301292258}
+  - component: {fileID: 1301292259}
+  m_Layer: 0
+  m_Name: Collider to prevent walking on furniture (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1301292258
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301292257}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.46806598, z: -0, w: 0.8836935}
+  m_LocalPosition: {x: -1.59, y: -0.23000002, z: -0.849}
+  m_LocalScale: {x: 0.2455879, y: 0.60225, z: 0.24656348}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 871293519}
+  m_LocalEulerAnglesHint: {x: 0, y: -55.818, z: 0}
+--- !u!65 &1301292259
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301292257}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1309371935
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36188,6 +37209,59 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 62883204}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1432304803
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1432304804}
+  - component: {fileID: 1432304805}
+  m_Layer: 0
+  m_Name: Collider to prevent walking on furniture (12)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1432304804
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432304803}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.46806598, z: -0, w: 0.8836935}
+  m_LocalPosition: {x: -3.417, y: -1.228, z: -1.099}
+  m_LocalScale: {x: 0.056735717, y: 0.7793108, z: 0.056961097}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 871293519}
+  m_LocalEulerAnglesHint: {x: 0, y: -55.818, z: 0}
+--- !u!65 &1432304805
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432304803}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1433514524 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2143619477585931109, guid: 8709ef70e0472f144b0029c8db975f43,
@@ -36613,6 +37687,59 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2efa78465e1e1e4ca09f60974592440, type: 3}
+--- !u!1 &1451853075
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1451853076}
+  - component: {fileID: 1451853077}
+  m_Layer: 0
+  m_Name: Collider to prevent walking on furniture (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1451853076
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451853075}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.9435395, z: -0, w: 0.33126026}
+  m_LocalPosition: {x: -1.6104056, y: -0.23000002, z: -0.63030267}
+  m_LocalScale: {x: 0.31738314, y: 0.60225, z: 0.24656348}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 871293519}
+  m_LocalEulerAnglesHint: {x: 0, y: -141.309, z: 0}
+--- !u!65 &1451853077
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451853075}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1453067037
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38701,6 +39828,59 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!1 &1532582406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1532582407}
+  - component: {fileID: 1532582408}
+  m_Layer: 0
+  m_Name: Collider to prevent walking on furniture (20)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1532582407
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532582406}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.46806598, z: -0, w: 0.8836935}
+  m_LocalPosition: {x: -2.615, y: -1.228, z: -5.453}
+  m_LocalScale: {x: 0.36661246, y: 1.0951262, z: 0.37378407}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 871293519}
+  m_LocalEulerAnglesHint: {x: 0, y: -55.818, z: 0}
+--- !u!65 &1532582408
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532582406}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1535130802 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1458284229094299986, guid: a233597a9a89fe04292b40f76eb8e449,
@@ -41274,6 +42454,59 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _surfaceType: 3
+--- !u!1 &1651022384
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1651022385}
+  - component: {fileID: 1651022386}
+  m_Layer: 0
+  m_Name: Collider to prevent walking on furniture
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1651022385
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651022384}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.276, y: -0.126, z: 0.913}
+  m_LocalScale: {x: 1.3906, y: 1, z: 1.7543969}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 871293519}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1651022386
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651022384}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1651525918
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42576,6 +43809,59 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a233597a9a89fe04292b40f76eb8e449, type: 3}
+--- !u!1 &1703720584
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1703720585}
+  - component: {fileID: 1703720586}
+  m_Layer: 0
+  m_Name: Collider to prevent walking on furniture (21)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1703720585
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703720584}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.46806598, z: -0, w: 0.8836935}
+  m_LocalPosition: {x: -3.665, y: -1.228, z: -5.615}
+  m_LocalScale: {x: 0.41196242, y: 1.2305933, z: 0.42002118}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 871293519}
+  m_LocalEulerAnglesHint: {x: 0, y: -55.818, z: 0}
+--- !u!65 &1703720586
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703720584}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1707683918
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44913,6 +46199,59 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _surfaceType: 3
+--- !u!1 &1779477039
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1779477040}
+  - component: {fileID: 1779477041}
+  m_Layer: 0
+  m_Name: Collider to prevent walking on furniture (17)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1779477040
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779477039}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.46806598, z: -0, w: 0.8836935}
+  m_LocalPosition: {x: 1.895, y: -1.228, z: -5.332}
+  m_LocalScale: {x: 0.37391573, y: 1.1169419, z: 0.38123018}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 871293519}
+  m_LocalEulerAnglesHint: {x: 0, y: -55.818, z: 0}
+--- !u!65 &1779477041
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779477039}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1786231864 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4392756407082238738, guid: c2efa78465e1e1e4ca09f60974592440,
@@ -45081,6 +46420,59 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1354010885}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1789421828
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1789421829}
+  - component: {fileID: 1789421830}
+  m_Layer: 0
+  m_Name: Collider to prevent walking on furniture (18)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1789421829
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789421828}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.46806598, z: -0, w: 0.8836935}
+  m_LocalPosition: {x: 0.271, y: -1.228, z: -5.46}
+  m_LocalScale: {x: 0.32625476, y: 0.9745716, z: 0.33263686}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 871293519}
+  m_LocalEulerAnglesHint: {x: 0, y: -55.818, z: 0}
+--- !u!65 &1789421830
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789421828}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1795025935
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45828,6 +47220,112 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1643647951}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1825490279
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1825490280}
+  - component: {fileID: 1825490281}
+  m_Layer: 0
+  m_Name: Collider to prevent walking on furniture (13)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1825490280
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825490279}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.46806598, z: -0, w: 0.8836935}
+  m_LocalPosition: {x: -2.074, y: -1.228, z: -3.132}
+  m_LocalScale: {x: 0.056735717, y: 0.7793108, z: 0.056961097}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 871293519}
+  m_LocalEulerAnglesHint: {x: 0, y: -55.818, z: 0}
+--- !u!65 &1825490281
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825490279}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1828399702
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1828399703}
+  - component: {fileID: 1828399704}
+  m_Layer: 0
+  m_Name: Collider to prevent walking on furniture (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1828399703
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828399702}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.284, y: -0.126, z: -0.099}
+  m_LocalScale: {x: 0.83748883, y: 0.60225, z: 1.0565856}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 871293519}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1828399704
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828399702}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1828662441
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46538,6 +48036,59 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5743b97a82a0d3a49a4276282d2b0d7a, type: 3}
+--- !u!1 &1862759859
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1862759860}
+  - component: {fileID: 1862759861}
+  m_Layer: 0
+  m_Name: Collider to prevent walking on furniture (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1862759860
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862759859}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.6931828, z: -0, w: 0.72076184}
+  m_LocalPosition: {x: 0.044, y: -0.23, z: -0.293}
+  m_LocalScale: {x: 0.83748883, y: 0.60225, z: 0.53564656}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 871293519}
+  m_LocalEulerAnglesHint: {x: 0, y: 87.765, z: 0}
+--- !u!65 &1862759861
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862759859}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1864167012
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47695,6 +49246,61 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7455cc2b6b74a4a43898509894502a30, type: 3}
+--- !u!1 &1902752530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1902752531}
+  - component: {fileID: 1902752532}
+  m_Layer: 0
+  m_Name: Collider to prevent walking on furniture (22)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1902752531
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902752530}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.46806598, z: -0, w: 0.8836935}
+  m_LocalPosition: {x: 3.89, y: -1.316, z: -6.104}
+  m_LocalScale: {x: 0.28577092, y: 1.6839123, z: 0.75561434}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 871293519}
+  m_LocalEulerAnglesHint: {x: 0, y: -55.818, z: 0}
+--- !u!136 &1902752532
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902752530}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1902801248
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52175,6 +53781,59 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7455cc2b6b74a4a43898509894502a30, type: 3}
+--- !u!1 &2064143361
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2064143362}
+  - component: {fileID: 2064143363}
+  m_Layer: 0
+  m_Name: Collider to prevent walking on furniture (16)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2064143362
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064143361}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.46806598, z: -0, w: 0.8836935}
+  m_LocalPosition: {x: 2.7251, y: -1.228, z: -6.6877}
+  m_LocalScale: {x: 0.06726587, y: 0.92395097, z: 0.067533076}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 871293519}
+  m_LocalEulerAnglesHint: {x: 0, y: -55.818, z: 0}
+--- !u!65 &2064143363
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064143361}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2064972861
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52746,6 +54405,59 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _surfaceType: 3
+--- !u!1 &2086481869
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2086481870}
+  - component: {fileID: 2086481871}
+  m_Layer: 0
+  m_Name: Collider to prevent walking on furniture (25)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2086481870
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086481869}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.70755637, z: -0, w: 0.70665693}
+  m_LocalPosition: {x: 4.0498, y: -1.228, z: -5.3646}
+  m_LocalScale: {x: 0.10466262, y: 0.84788746, z: 0.10671001}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 871293519}
+  m_LocalEulerAnglesHint: {x: 0, y: -90.073, z: 0}
+--- !u!65 &2086481871
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086481869}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2086705705
 PrefabInstance:
   m_ObjectHideFlags: 0
