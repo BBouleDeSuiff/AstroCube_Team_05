@@ -45812,27 +45812,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!135 &1707925280
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1707925278}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 6.260091
-  m_Center: {x: -0.62758124, y: 9.429762e-16, z: 0.0000000011436785}
 --- !u!114 &1707925281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45845,14 +45824,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28cced665a6f1fc4b928b28c83c2e146, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _displayType: 0
+  _displayType: 3
   _fadeInDuration: 1
   _fadeOutDuration: 0.5
   _canvasGroup: {fileID: 1073986886}
   _fadeEase: 2
   _resolveAutomaticallyOnInput: 1
   _resolveOnLeaveTrigger: 0
-  _hideUponLeaveTrigger: 0
+  _hideUponLeaveTrigger: 1
   _expectedInput1: 00010000
   _onStartShowText:
     m_PersistentCalls:
