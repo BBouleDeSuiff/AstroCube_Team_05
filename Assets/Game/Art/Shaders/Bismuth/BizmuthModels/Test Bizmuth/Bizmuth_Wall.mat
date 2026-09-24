@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Bizmuth1
-  m_Shader: {fileID: -6465566751694194690, guid: 22ddadbbbb8fd2247b330f87216c60f3,
+  m_Name: Bizmuth_Wall
+  m_Shader: {fileID: -6465566751694194690, guid: 0a006f47344674343b5bf4a5ccc42a1a,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -93,12 +93,48 @@ Material:
         m_Texture: {fileID: 2800000, guid: 2dc6948f417df35488e4eed8ddfcceb6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_0654f8b88f4f402bab7165bf2c8b1609_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: fcc5e256d05589341a2f84f2d136ba99, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_12756a64122840d180d203e16feb73dd_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 75b254a55f7e3f347ac8f2b5db9b11d9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_30d96cdb4f64403dbcc7a47cb2927932_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 81424e0084a633c4b856d7eefe6fddbc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_6b7c9447222343588769a7a98e77f10f_Texture_1_Texture2D:
         m_Texture: {fileID: 2800000, guid: 69d8cd09a46b77d40b26f7f557eb69fc, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_810c9d88202844e5906baa8cd9c9cd3f_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 81424e0084a633c4b856d7eefe6fddbc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_81be3225381149d0addbd7be86f99ad1_Texture_1_Texture2D:
         m_Texture: {fileID: 2800000, guid: fcc5e256d05589341a2f84f2d136ba99, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_9652a49773ed4f7fb03af5704a7c8156_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 3f73b69ad6aa78544bd420a6fca97e30, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_a104ab68115149a3995626696d8dc8eb_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 4446a15d3ad2c334da736da08ae39f07, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_d64016a38bbf4a5e8cafc280d749bd93_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 66fa05d78f580174fbc2184f0ea6606b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_eb8681905f464c6ca0dfdd00bbd742cf_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 69d8cd09a46b77d40b26f7f557eb69fc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_fe307a2f17ec45eab91b6e513c7de19e_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 2dc6948f417df35488e4eed8ddfcceb6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecularColorMap:
@@ -232,6 +268,7 @@ Material:
     - _PPDPrimitiveLength: 1
     - _PPDPrimitiveWidth: 1
     - _PerPixelSorting: 0
+    - _Rand: 0
     - _RayTracing: 0
     - _ReceivesSSR: 1
     - _ReceivesSSRTransparent: 0

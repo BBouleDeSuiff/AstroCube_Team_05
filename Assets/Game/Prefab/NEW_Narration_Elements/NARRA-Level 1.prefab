@@ -164,6 +164,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -712,6 +713,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -1038,6 +1040,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -1174,6 +1177,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -1218,7 +1222,7 @@ GameObject:
   - component: {fileID: 5550061052465358216}
   - component: {fileID: 2744686373640673127}
   m_Layer: 0
-  m_Name: '- wait 0,25s'
+  m_Name: '- wait 0.25s'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1501,7 +1505,7 @@ MonoBehaviour:
   durationMode: 0
   waitTime: 1
   _inputToggleType: 1
-  _targetInputs: 32127
+  _targetInputs: 32255
 --- !u!1 &4386420723036695437
 GameObject:
   m_ObjectHideFlags: 0
@@ -1891,6 +1895,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -2134,6 +2139,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -2606,7 +2612,7 @@ GameObject:
   - component: {fileID: 6061691206796728815}
   - component: {fileID: 5553937998893050014}
   m_Layer: 0
-  m_Name: 'SUBTITLE 2,5s : <LVL_1_VOICELINES:voM022_EN>'
+  m_Name: 'SUBTITLE 2.5s : <LVL_1_VOICELINES:voM022_EN>'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2887,7 +2893,7 @@ GameObject:
   - component: {fileID: 2911205852494507519}
   - component: {fileID: 7548366480213938008}
   m_Layer: 0
-  m_Name: '- wait 0,25s'
+  m_Name: '- wait 0.25s'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -86,7 +86,7 @@ public class PlayerTrigger : MonoBehaviour
                 break;
 
             case "SpeedZone":
-                _playerMovement.SetSpeed(_playerMovement.defaultSpeed * newSpeedMultiplyer);
+                _playerMovement.SetSpeed(_playerMovement.DefaultSpeed * newSpeedMultiplyer);
                 break;
 
             case "GravityZone":
@@ -147,7 +147,6 @@ public class PlayerTrigger : MonoBehaviour
                 _playerMovement.SetExternallyAppliedMovement(Vector3.zero);
                 break;
             case "FreeFallZone":
-                print("GETOUT OF HERE");
                 _playerMovement.FreeFallZone = false;
                 break;
 

@@ -114,7 +114,6 @@ public class SelectionCube : MonoBehaviour
                 else if (renderer.transform.CompareTag("LDObject"))
                 {
                     Material baseMat = renderer.material;
-                    Debug.Log(renderer.gameObject.name + " " + baseMat.name, renderer.gameObject);
                     _instancedLockedObjectMat = new Material(_lockedObjectMat);
 
                     _instancedLockedObjectMat.SetTexture("_BaseMap", baseMat.GetTexture("_BaseColorMap"));

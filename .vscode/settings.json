@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "AstroCube_Team_05.sln"
+    "dotnet.defaultSolution": "AstroCube_Team_05.slnx"
 }

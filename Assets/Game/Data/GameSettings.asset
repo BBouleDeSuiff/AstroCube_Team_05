@@ -298,3 +298,4 @@ MonoBehaviour:
   _maxTimeForAchievement: 1200
   _maxRotationsForAchievement: 70
   _maxLockedRotationsForAchievement: 5
+  _maxMemoryObjectsForAchievement: 1
