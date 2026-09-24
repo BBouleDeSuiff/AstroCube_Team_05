@@ -342,8 +342,7 @@ public class SettingsMenuScreenView : UIView
     private void CloseMenu()
     {
 
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
         _uiManager.ShowInGameExclusive<PlayingView>();
     }
 
@@ -351,8 +350,7 @@ public class SettingsMenuScreenView : UIView
     {
         Debug.Log("Back to Main Menu from Settings Menu");
         Hide();
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+        //Cursor.lockState = CursorLockMode.None;
         _uiManager.Show<MainMenuView>();
     }
 

@@ -135,10 +135,12 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         EventManager.TriggerSceneStart();
+        LockMouse();
     }
     public void ChangeScene()
     {
         SceneManager.LoadScene((SceneManager.GetActiveScene().buildIndex + 1) % SceneManager.sceneCountInBuildSettings);
+        LockMouse();
     }
 
     public void LoadSpecificScene(string sceneName)

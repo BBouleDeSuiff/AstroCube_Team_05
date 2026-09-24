@@ -18,8 +18,8 @@ public class InputSystemManager : MonoBehaviour
 
     public enum EInputMode
     {
+        KEYBOARD,
         CONTROLLER,
-        KEYBOARD
     }    
     
     public enum EInputType

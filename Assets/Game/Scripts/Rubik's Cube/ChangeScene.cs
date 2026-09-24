@@ -11,7 +11,7 @@ public class ChangeScene : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.P) && PToReturnToMenu)
         {
-            Cursor.lockState = CursorLockMode.None;
+            //Cursor.lockState = CursorLockMode.None;
             EventManager.TriggerSceneEnd();
             SceneManager.LoadScene(0);
         }

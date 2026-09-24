@@ -8,7 +8,7 @@ public class MenuCameraAnimationEvents : MonoBehaviour
 
     private void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void DeactivateTitleScreenAnimEvent()
@@ -19,6 +19,6 @@ public class MenuCameraAnimationEvents : MonoBehaviour
     public void ActivateStartMenuAnimEvent()
     {
         if (_togMenuElem != null) _togMenuElem.Activate(MenuElement.START_MENU);
-        Cursor.lockState = CursorLockMode.None;
+        //Cursor.lockState = CursorLockMode.None;
     }
 }
