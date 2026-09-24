@@ -53,7 +53,6 @@ public class PauseMenu : MonoBehaviour
         _UIHolder.SetActive(false);
         SettingsUIHolder.SetActive(false);
         ControlsUIHolder.SetActive(false);
-        //Cursor.lockState = CursorLockMode.Locked;
 
         if (_menuPauseSnapshotInstance.isValid())
         {

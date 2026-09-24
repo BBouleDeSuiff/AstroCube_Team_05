@@ -69,7 +69,6 @@ public class MouseCamControl : MonoBehaviour
     {
         _cinemashineCam = GetComponent<CinemachineVirtualCamera>();
         _mainCamera = GetComponent<Camera>();
-        //Cursor.lockState = CursorLockMode.Locked;
         _settings = GameManager.Instance.Settings;
         UpdateCameraFOV(_customSettings.customFov);
         _inputHandler = InputHandler.Instance;
