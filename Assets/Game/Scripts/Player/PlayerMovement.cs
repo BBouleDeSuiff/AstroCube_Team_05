@@ -160,8 +160,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void HandleHorizontalMovement()
     {
-        Vector3 inputDir = (_camera.right * _xInput + _camera.forward * _zInput);
-        inputDir = Vector3.ProjectOnPlane(inputDir, transform.up).normalized;
+        Vector3 camForward = Vector3.ProjectOnPlane(_camera.forward, transform.up).normalized;
+        Vector3 camRight = Vector3.ProjectOnPlane(_camera.right, transform.up).normalized;
+
+        Vector3 inputDir = (camRight * _xInput + camForward * _zInput).normalized;
 
         if (_isGrounded)
         {
