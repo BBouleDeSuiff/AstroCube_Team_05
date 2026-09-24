@@ -191,12 +191,19 @@ public class SettingsMenuScreenView : UIView
     {
         _customisedSettings.customMotionBlur = state;
         _customisedSettings.SaveRuntimeValues();
+
+        EventManager.TriggerMotionBlurChange(state);
     }
 
     private void OnRumbleToggled(bool state)
     {
         _customisedSettings.customVibration = state;
         _customisedSettings.SaveRuntimeValues();
+
+        if (!state && Gamepad.current != null)
+        {
+            Gamepad.current.SetMotorSpeeds(0f, 0f);
+        }
     }
 
     private void OnPreviewToggled(bool state)
