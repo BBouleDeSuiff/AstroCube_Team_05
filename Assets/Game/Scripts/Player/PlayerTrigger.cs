@@ -86,7 +86,7 @@ public class PlayerTrigger : MonoBehaviour
                 break;
 
             case "SpeedZone":
-                _playerMovement.SetSpeed(_playerMovement.defaultSpeed * newSpeedMultiplyer);
+                _playerMovement.SetSpeed(_playerMovement.DefaultSpeed * newSpeedMultiplyer);
                 break;
 
             case "GravityZone":

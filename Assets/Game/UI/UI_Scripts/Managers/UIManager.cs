@@ -28,7 +28,7 @@ public class UIManager : MonoBehaviour
         }
         Time.timeScale = 1f;
 
-        _versionTxt.text = "Version " + Application.version;
+        if(_versionTxt) _versionTxt.text = "Version " + Application.version;
     }
 
     public T GetView<T>() where T : UIView
