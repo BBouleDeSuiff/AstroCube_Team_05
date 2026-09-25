@@ -344,6 +344,7 @@ MonoBehaviour:
   _fadeEase: 1
   _resolveAutomaticallyOnInput: 1
   _resolveOnLeaveTrigger: 0
+  _hideUponLeaveTrigger: 0
   _expectedInput1: 10000000
   _onStartShowText:
     m_PersistentCalls:

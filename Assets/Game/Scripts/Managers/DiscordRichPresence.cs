@@ -66,7 +66,11 @@ public class DiscordRichPresence : MonoBehaviour
         _client.SetPresence(new RichPresence()
         {
             Details = details,
+#if UNITY_EDITOR
+            State = "Resolving the code of the cube",
+#else
             State = state,
+#endif
             Assets = new Assets()
             {
                 LargeImageKey = "gamelogo",
