@@ -126,6 +126,8 @@ public class EventManager : MonoBehaviour
 
     public static event Action OnPlayerStopsFalling;
 
+    public static event Action<bool> OnIsPlayerLookingAtInteractableObject;
+
     //Narrative Events
     public static event Action OnStartNarrativeSequence;
     public static event Action OnEndNarrativeSequence;
@@ -257,6 +259,11 @@ public class EventManager : MonoBehaviour
     public static void TriggerPlayerStopsFalling()
     {
         OnPlayerStopsFalling?.Invoke();
+    }
+
+    public static void TriggerIsPlayerLookingAtInteractableObject(bool isLooking)
+    {
+        OnIsPlayerLookingAtInteractableObject?.Invoke(isLooking);
     }
 
     public void TriggerResetOnLose()

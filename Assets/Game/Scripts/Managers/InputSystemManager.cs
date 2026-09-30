@@ -24,6 +24,7 @@ public class InputSystemManager : MonoBehaviour
     
     public enum EInputType
     {
+
         NONE = 0,
         CLOCKWISE = 1 << 0,
         COUNTER_CLOCKWISE = 1 << 1,
@@ -34,13 +35,12 @@ public class InputSystemManager : MonoBehaviour
         SHOW_STRIPS = 1 << 6,
         GAME_PAUSE = 1 << 7,
         INTERACT = 1 << 8,
-        PAUSE_GAME = 1 << 9,
         MOVEMENT = 1 << 10,
         CAMERA = 1 << 11,
         SEE_EXIT = 1 << 12,
         PREVIEW_CANCEL = 1 << 13,
         JUMP = 1 << 14, 
-        SKIP_NARRA = 1 << 15, 
+        SKIP_NARRA = 1 << 15,
     }
 
     private void Awake()
@@ -66,6 +66,7 @@ public class InputSystemManager : MonoBehaviour
             if (tempInputMode != _currentInputMode)
             {
                 OnCurrentInputModeChange?.Invoke(_currentInputMode);
+                Cursor.lockState = _currentInputMode == EInputMode.KEYBOARD? CursorLockMode.None : CursorLockMode.Locked;
             }
         }
     }
@@ -93,8 +94,6 @@ public class InputSystemManager : MonoBehaviour
                 return("GamePause");
             case EInputType.INTERACT:
                 return("Interact");
-            case EInputType.PAUSE_GAME:
-                return("PauseGame");
             case EInputType.MOVEMENT:
                 return("Movement");
             case EInputType.CAMERA:

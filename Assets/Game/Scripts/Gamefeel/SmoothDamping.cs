@@ -55,6 +55,7 @@ public class SmoothDamping : MonoBehaviour
     [SerializeField] bool LockRotationToWorldRotation;
 
     Quaternion _cubeStartRotation;
+    MouseCamControl _mouseCamControl;
 
     private void Start()
     {
@@ -63,9 +64,10 @@ public class SmoothDamping : MonoBehaviour
         _imaginaryCubePosX = _playerTransform.position.x;
 
         _cubeStartRotation = transform.parent.localRotation;
+        _mouseCamControl = _cameraTransfrom.gameObject.GetComponent<MouseCamControl>();
     }
 
-    private void FixedUpdate()
+    private void LateUpdate()
     {
         // vertical movement ----------------
 
@@ -118,7 +120,7 @@ public class SmoothDamping : MonoBehaviour
 
         // camera rotation movement ----------------
 
-        targetPos += _cameraTransfrom.gameObject.GetComponent<MouseCamControl>().GetMousePos;
+        targetPos += _mouseCamControl.MousePos;
 
         Vector2 newImaginaryCubePosVec = Vector2.SmoothDamp(
             _imaginaryCubePosVec,
