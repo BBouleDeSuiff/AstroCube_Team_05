@@ -117090,6 +117090,11 @@ PrefabInstance:
       propertyPath: m_ShapeRadius
       value: 3.47
       objectReference: {fileID: 0}
+    - target: {fileID: 7115613048994388029, guid: fbaabf9de8236634c9d6a7a4fa7db73f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
