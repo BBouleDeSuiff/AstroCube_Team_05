@@ -294,9 +294,9 @@ public class InputHandler : MonoBehaviour
     //Unused
     public void OnCrouch(InputAction.CallbackContext ctx)
     {
-        if (!IsInputEnabled(EInputType.MOVEMENT)) return;
+        /*if (!IsInputEnabled(EInputType.MOVEMENT)) return;
         if (!ctx.performed && !_controller.ControlledScript.IsReversing)
-            _playerMovement.ActionCrouch();
+            _playerMovement.ActionCrouch();*/
     }
 
     #endregion

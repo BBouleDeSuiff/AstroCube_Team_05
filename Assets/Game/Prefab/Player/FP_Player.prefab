@@ -303,18 +303,17 @@ MonoBehaviour:
   _floorLayer:
     serializedVersion: 2
     m_Bits: 449
-  _speedMultiplier: 1
+  _speedMultiplier: 1.2
   _stairsSpeedMultiplier: 1
   _canJump: 1
   _floorDistance: 0.7
   _coyoteTime: 0
   _maxPlayerFallSpeed: 100
+  _jumpCooldownTimer: 0
   _canCrouch: 0
   _slippingMovementControl: 0.03
-  _enableGravityRotation: 0
-  _resetRotationWhenNoClip: 0
   _isViewBobbingEnabled: 1
-  isOnDefaultGround: 0
+  _resetRotationWhenNoClip: 0
   _timerTNextStep: 1
 --- !u!114 &3123279762399017136
 MonoBehaviour:
