@@ -56168,6 +56168,11 @@ PrefabInstance:
       propertyPath: m_MotionVectors
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2604585580800071567, guid: 1fb0f867b46ea7c41aafa3f1dc49e89a,
+        type: 3}
+      propertyPath: m_RenderAlignment
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2824243638148288484, guid: 1fb0f867b46ea7c41aafa3f1dc49e89a,
         type: 3}
       propertyPath: m_Enabled
