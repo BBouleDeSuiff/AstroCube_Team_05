@@ -104,6 +104,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _NormalTextureZellige:
+        m_Texture: {fileID: 2800000, guid: 460ab974491a3f44e9f66f8abca82b13, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Pattern1:
         m_Texture: {fileID: 2800000, guid: 460ab974491a3f44e9f66f8abca82b13, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -114,6 +118,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _Pattern3:
         m_Texture: {fileID: 2800000, guid: e7f99da55b56c284da4149d6e1191d6f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Pattern4:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Pattern5:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_5f6d977354ed4bae8a674bb95dd429bd_Texture_1_Texture2D:
@@ -320,6 +332,8 @@ Material:
     - _Pattern1Color: {r: 0, g: 1, b: 0.09375, a: 1}
     - _Pattern2Color: {r: 1, g: 0, b: 0.013530254, a: 1}
     - _Pattern3Color: {r: 0, g: 0.28422594, b: 1, a: 1}
+    - _Pattern4Color: {r: 0, g: 0, b: 0, a: 1}
+    - _Pattern5Color: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _ThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
     - _TransmittanceColor: {r: 1, g: 1, b: 1, a: 1}

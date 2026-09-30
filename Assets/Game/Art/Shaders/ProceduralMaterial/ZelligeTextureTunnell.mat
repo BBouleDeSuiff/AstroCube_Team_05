@@ -291,10 +291,10 @@ Material:
     - _max_color: 1
     - _normal_strenght: 1
     - _rotate: -1
-    - _size: 0.767
+    - _size: 1
     - _sphere_size: 0.3
     - _star_interior_size: 0
-    - _star_size: 0.733
+    - _star_size: 0.785
     - _star_thickness: 0.595
     - _texture: 1
     - _thickness: 0.511
