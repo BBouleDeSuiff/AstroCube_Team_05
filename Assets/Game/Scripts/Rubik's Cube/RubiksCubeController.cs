@@ -4,8 +4,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.ProBuilder.Shapes;
-using Debug = FMOD.Debug;
 
 public class RubiksCubeController : MonoBehaviour
 {
