@@ -571,6 +571,23 @@ public class RubiksCubeController : MonoBehaviour
         }
     }
 
+    // Creared variation of _ExteriorCollidersActivation to be used in the FollowSequence() function of the RubiksMovement script. 
+    // Am I making spagettie? Maybe. Yum! Yum! [italian noises]. 
+    public static void ExteriorCollidersActivation(SliceAxis sliceAxis, Transform actualFace, RubiksMovement controlledScript, float durationInSeconds)
+    {
+        if (sliceAxis == SliceAxis.Y) return; // if player is snanding on the ground while it rotates. 
+
+        if (controlledScript != null)
+        {
+            foreach (Transform go in controlledScript.GetCubesFromFace(actualFace, sliceAxis))
+            {
+                SelectionCube selection = go.GetComponent<SelectionCube>();
+                if (selection == null) continue;
+                selection.StartActivateExteriorCollidersWithDuration(durationInSeconds);
+            }
+        }
+    }
+
     void _ShowPreview(SliceAxis sliceAxis, SelectionCube.SelectionMode mode)
     {
         if (_previewControlledScript != null)
