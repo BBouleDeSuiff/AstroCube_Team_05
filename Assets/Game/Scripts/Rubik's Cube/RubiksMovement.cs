@@ -213,6 +213,7 @@ public class RubiksMovement : MonoBehaviour
                 if (!AutoMovesSequence[_sequenceIndex].Axis)
                 {
                     AutoMovesSequence[_sequenceIndex].Axis = GetAxisFromCube(AutoMovesSequence[_sequenceIndex].cube, AutoMovesSequence[_sequenceIndex].orientation);
+                    RubiksCubeController.ExteriorCollidersActivation(AutoMovesSequence[_sequenceIndex].orientation, AutoMovesSequence[_sequenceIndex].cube, this, 10);
                 }
 
                 StartCoroutine(RotateAxisCoroutine(AutoMovesSequence[_sequenceIndex].Axis, AutoMovesSequence[_sequenceIndex].cube, AutoMovesSequence[_sequenceIndex].clockWise, TimeToRotate, AutoMovesSequence[_sequenceIndex].orientation));
