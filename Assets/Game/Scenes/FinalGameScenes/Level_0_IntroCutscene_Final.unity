@@ -2028,6 +2028,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 62883204}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &62883219 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3182518443189061664, guid: e0c85bf540713094da1c4173f8b550de,
+    type: 3}
+  m_PrefabInstance: {fileID: 62883204}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62883205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &65033958
 GameObject:
   m_ObjectHideFlags: 0
@@ -52288,6 +52300,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _surfaceType: 3
+--- !u!320 &2010366437 stripped
+PlayableDirector:
+  m_CorrespondingSourceObject: {fileID: 4601890322360787840, guid: 1fb0f867b46ea7c41aafa3f1dc49e89a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4349611885039400626}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2010921880 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8428407438595428714, guid: e59bf0c4011325a49b7cff008dfb150f,
@@ -56213,6 +56231,71 @@ PrefabInstance:
         type: 3}
       propertyPath: m_MotionVectors
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2614356387550270470, guid: 1fb0f867b46ea7c41aafa3f1dc49e89a,
+        type: 3}
+      propertyPath: _events.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2614356387550270470, guid: 1fb0f867b46ea7c41aafa3f1dc49e89a,
+        type: 3}
+      propertyPath: _events.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2614356387550270470, guid: 1fb0f867b46ea7c41aafa3f1dc49e89a,
+        type: 3}
+      propertyPath: _events.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2614356387550270470, guid: 1fb0f867b46ea7c41aafa3f1dc49e89a,
+        type: 3}
+      propertyPath: _events.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 62883219}
+    - target: {fileID: 2614356387550270470, guid: 1fb0f867b46ea7c41aafa3f1dc49e89a,
+        type: 3}
+      propertyPath: _events.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2010366437}
+    - target: {fileID: 2614356387550270470, guid: 1fb0f867b46ea7c41aafa3f1dc49e89a,
+        type: 3}
+      propertyPath: _events.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2614356387550270470, guid: 1fb0f867b46ea7c41aafa3f1dc49e89a,
+        type: 3}
+      propertyPath: _events.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 2614356387550270470, guid: 1fb0f867b46ea7c41aafa3f1dc49e89a,
+        type: 3}
+      propertyPath: _events.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 2614356387550270470, guid: 1fb0f867b46ea7c41aafa3f1dc49e89a,
+        type: 3}
+      propertyPath: _events.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Cinemachine.CinemachineVirtualCamera, Cinemachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2614356387550270470, guid: 1fb0f867b46ea7c41aafa3f1dc49e89a,
+        type: 3}
+      propertyPath: _events.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.Playables.PlayableDirector, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2614356387550270470, guid: 1fb0f867b46ea7c41aafa3f1dc49e89a,
+        type: 3}
+      propertyPath: _events.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2614356387550270470, guid: 1fb0f867b46ea7c41aafa3f1dc49e89a,
+        type: 3}
+      propertyPath: _events.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2614356387550270470, guid: 1fb0f867b46ea7c41aafa3f1dc49e89a,
+        type: 3}
+      propertyPath: _events.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2824243638148288484, guid: 1fb0f867b46ea7c41aafa3f1dc49e89a,
         type: 3}
