@@ -88529,7 +88529,7 @@ PrefabInstance:
     - target: {fileID: 6254475728447530212, guid: eee799920d963af4c9ebb769c5e49354,
         type: 3}
       propertyPath: InitialModule.startLifetime.scalar
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 6254475728447530212, guid: eee799920d963af4c9ebb769c5e49354,
         type: 3}
@@ -88539,12 +88539,12 @@ PrefabInstance:
     - target: {fileID: 6254475728447530212, guid: eee799920d963af4c9ebb769c5e49354,
         type: 3}
       propertyPath: InitialModule.startColor.maxColor.g
-      value: 1
+      value: 0.8886843
       objectReference: {fileID: 0}
     - target: {fileID: 6254475728447530212, guid: eee799920d963af4c9ebb769c5e49354,
         type: 3}
       propertyPath: InitialModule.startColor.maxColor.r
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6254475728447530212, guid: eee799920d963af4c9ebb769c5e49354,
         type: 3}
@@ -114021,6 +114021,12 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 888407557355967541, guid: 0e9b14553c331f24595f6530463a47c5,
+        type: 3}
+      propertyPath: _Keyboard
+      value: 
+      objectReference: {fileID: 21300000, guid: 2e62f1c176bdc044ea613cc204738eb1,
+        type: 3}
     - target: {fileID: 2958547595057997201, guid: 0e9b14553c331f24595f6530463a47c5,
         type: 3}
       propertyPath: m_AnchorMax.y
