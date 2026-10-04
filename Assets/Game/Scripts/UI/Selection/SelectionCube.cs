@@ -240,7 +240,9 @@ public class SelectionCube : MonoBehaviour
         }
     }
 
-    public void StartActivateExteriorColliders()
+    // Note: I should not have made this a coroutine. It should be managed by the 'Start/End Rotation' events instead.
+    // It works for Alula1, but Alula 2 should be done with the event instead. 
+    public void StartActivateExteriorColliders()  
     {
         StartCoroutine(ActivateExteriorColliders());
     }
@@ -248,6 +250,18 @@ public class SelectionCube : MonoBehaviour
     {
         ExteriorColiderEnabled(true);
         yield return new WaitForSeconds(GameManager.Instance.Settings.RubikscCubeAxisRotationDuration);
+        ExteriorColiderEnabled(false);
+    }
+
+    // Created StartActivateExteriorColliders() with modifyable duriation to be used in the FollowSequence() function of the RubiksMovement script. 
+    public void StartActivateExteriorCollidersWithDuration(float duration_in_seconds)
+    {
+        StartCoroutine(ActivateExteriorCollidersWithDuration(duration_in_seconds));
+    }
+    private IEnumerator ActivateExteriorCollidersWithDuration(float duration_in_seconds)
+    {
+        ExteriorColiderEnabled(true);
+        yield return new WaitForSeconds(duration_in_seconds);
         ExteriorColiderEnabled(false);
     }
 
