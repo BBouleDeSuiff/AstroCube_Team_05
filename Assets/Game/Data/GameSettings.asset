@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aade57aac0ab35b42971e2561a7bf92f, type: 3}
   m_Name: GameSettings
   m_EditorClassIdentifier: 
-  _playerMoveSpeed: 3.8
+  _playerMoveSpeed: 6
   _stepHeightMax: 0.3
   _gravity: -20
   _maxJumpHeight: 1.8
