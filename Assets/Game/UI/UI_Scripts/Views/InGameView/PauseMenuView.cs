@@ -65,8 +65,6 @@ public class PauseMenuView : UIView
         StartCoroutine(AllowCancelNextFrame());
 
         Time.timeScale = 0f;
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
     }
 
     private void OnDisable()
@@ -110,8 +108,6 @@ public class PauseMenuView : UIView
     private void OnResumeClicked()
     {
         Time.timeScale = 1f;
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
         EventManager.TriggerGameUnpause();
         
         InputSystemManager.Instance.PlayerInputs.DeactivateInput();
@@ -138,8 +134,6 @@ public class PauseMenuView : UIView
             onConfirm: () =>
             {
                 Time.timeScale = 1f;
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
                 SceneManager.LoadScene("GameEntry");
             },
             onCancel: () =>
@@ -157,8 +151,6 @@ public class PauseMenuView : UIView
 
     private void CloseMenu()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
         _uiManager.ShowInGameExclusive<PlayingView>();
         RuntimeManager.PlayOneShot(closePauseMenu);
     }

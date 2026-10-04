@@ -1,18 +1,12 @@
 using DG.Tweening;
 using NaughtyAttributes;
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using RubiksStatic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.ProBuilder;
-using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
-using UnityEditor;
 
 public class GameManager : MonoBehaviour
 {
@@ -135,10 +129,12 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         EventManager.TriggerSceneStart();
+        LockMouse();
     }
     public void ChangeScene()
     {
         SceneManager.LoadScene((SceneManager.GetActiveScene().buildIndex + 1) % SceneManager.sceneCountInBuildSettings);
+        LockMouse();
     }
 
     public void LoadSpecificScene(string sceneName)
@@ -166,7 +162,7 @@ public class GameManager : MonoBehaviour
 
     void UnlockMouse()
     {
-        if (InputSystemManager.Instance.CurrentInputMode == InputSystemManager.EInputMode.KEYBOARD || Cursor.lockState == CursorLockMode.Locked)
+        if (InputSystemManager.Instance.CurrentInputMode == InputSystemManager.EInputMode.KEYBOARD && Cursor.lockState == CursorLockMode.Locked)
         {
             Cursor.lockState = CursorLockMode.None;
         }
