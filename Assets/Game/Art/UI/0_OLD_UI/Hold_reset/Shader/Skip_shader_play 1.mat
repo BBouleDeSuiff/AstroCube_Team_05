@@ -83,7 +83,7 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Slider1: 0
+    - _Slider1: 1
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
