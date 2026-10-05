@@ -6056,7 +6056,7 @@ PrefabInstance:
     - target: {fileID: 8791197596247916459, guid: 9ed6fd7dc47e648458fb217f60f9e27f,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2522758897290673568, guid: 9ed6fd7dc47e648458fb217f60f9e27f, type: 3}
@@ -24749,7 +24749,7 @@ PrefabInstance:
     - target: {fileID: 1208380523897098526, guid: 9fe74e3d698eaf4439fac2a33d2ae86b,
         type: 3}
       propertyPath: m_Name
-      value: 'ACTIVATE [GameObject]'
+      value: 'DISABLE [GameObject]'
       objectReference: {fileID: 0}
     - target: {fileID: 5371771354368818579, guid: 9fe74e3d698eaf4439fac2a33d2ae86b,
         type: 3}
@@ -24810,6 +24810,14 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1365141804152585289, guid: 9fe74e3d698eaf4439fac2a33d2ae86b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 682423548}
+    - targetCorrespondingSourceObject: {fileID: 2549602338176465233, guid: 9fe74e3d698eaf4439fac2a33d2ae86b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1645671076}
     - targetCorrespondingSourceObject: {fileID: 7948335770749272558, guid: 9fe74e3d698eaf4439fac2a33d2ae86b,
         type: 3}
       insertIndex: -1
@@ -24878,14 +24886,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1210618650}
-    - targetCorrespondingSourceObject: {fileID: 1365141804152585289, guid: 9fe74e3d698eaf4439fac2a33d2ae86b,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 682423548}
-    - targetCorrespondingSourceObject: {fileID: 2549602338176465233, guid: 9fe74e3d698eaf4439fac2a33d2ae86b,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1645671076}
   m_SourcePrefab: {fileID: 100100000, guid: 9fe74e3d698eaf4439fac2a33d2ae86b, type: 3}
 --- !u!4 &710775490 stripped
 Transform:
@@ -27320,6 +27320,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 342671776877316550, guid: e0c85bf540713094da1c4173f8b550de,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 103.07007
+      objectReference: {fileID: 0}
+    - target: {fileID: 342671776877316550, guid: e0c85bf540713094da1c4173f8b550de,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -23.800049
       objectReference: {fileID: 0}
     - target: {fileID: 605063237914803937, guid: e0c85bf540713094da1c4173f8b550de,
         type: 3}
@@ -40921,6 +40931,11 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 51295811779bf104fb34172aae41dc3f, type: 2}
+    - target: {fileID: 8110134256647331591, guid: e0c85bf540713094da1c4173f8b550de,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 44.22522
+      objectReference: {fileID: 0}
     - target: {fileID: 8298564056692292322, guid: e0c85bf540713094da1c4173f8b550de,
         type: 3}
       propertyPath: m_fontSizeBase
@@ -50426,7 +50441,7 @@ PrefabInstance:
     - target: {fileID: 6511516968666353464, guid: 989b02edbff0b0742a7dfde3a0c5f2d2,
         type: 3}
       propertyPath: m_Name
-      value: 'ACTIVATE [GameObject]'
+      value: 'DISABLE [GameObject]'
       objectReference: {fileID: 0}
     - target: {fileID: 7232317881844358316, guid: 989b02edbff0b0742a7dfde3a0c5f2d2,
         type: 3}

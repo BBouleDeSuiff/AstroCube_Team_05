@@ -63,7 +63,7 @@ public class MouseCamControl : MonoBehaviour
     {
         transform.localPosition = Vector3.zero;
         _xRotation = _playerTransform.eulerAngles.y;
-
+        Cursor.lockState = CursorLockMode.Locked;
     }
     void Start()
     {

@@ -307,7 +307,7 @@ public class CustomisedSettings : ScriptableObject
         if (PlayerPrefs.HasKey("Setting_Volume_General"))
         {
             float general = PlayerPrefs.GetFloat("Setting_Volume_General");
-            Debug.Log($"[LoadRuntimeValues] Loaded GeneralVolume from prefs: {general}");
+            //Debug.Log($"[LoadRuntimeValues] Loaded GeneralVolume from prefs: {general}");
             _customGeneralVolume = general;
         }
         else
@@ -318,7 +318,7 @@ public class CustomisedSettings : ScriptableObject
         if (PlayerPrefs.HasKey("Setting_Volume_Music"))
         {
             float music = PlayerPrefs.GetFloat("Setting_Volume_Music");
-            Debug.Log($"[LoadRuntimeValues] Loaded MusicVolume from prefs: {music}");
+            //Debug.Log($"[LoadRuntimeValues] Loaded MusicVolume from prefs: {music}");
             _customMusicVolume = music;
         }
         else
@@ -329,7 +329,7 @@ public class CustomisedSettings : ScriptableObject
         if (PlayerPrefs.HasKey("Setting_Volume_SFX"))
         {
             float sfx = PlayerPrefs.GetFloat("Setting_Volume_SFX");
-            Debug.Log($"[LoadRuntimeValues] Loaded SFXVolume from prefs: {sfx}");
+            //Debug.Log($"[LoadRuntimeValues] Loaded SFXVolume from prefs: {sfx}");
             _customSoundEffectsVolume = sfx;
         }
         else
@@ -340,7 +340,7 @@ public class CustomisedSettings : ScriptableObject
         if (PlayerPrefs.HasKey("Setting_Volume_Voice"))
         {
             float voice = PlayerPrefs.GetFloat("Setting_Volume_Voice");
-            Debug.Log($"[LoadRuntimeValues] Loaded VoiceVolume from prefs: {voice}");
+            //Debug.Log($"[LoadRuntimeValues] Loaded VoiceVolume from prefs: {voice}");
             _customVoiceVolume = voice;
         }
         else
@@ -351,7 +351,7 @@ public class CustomisedSettings : ScriptableObject
         if (PlayerPrefs.HasKey("Setting_FOV"))
         {
             float fov = PlayerPrefs.GetFloat("Setting_FOV");
-            Debug.Log($"[LoadRuntimeValues] Loaded FOV from prefs: {fov}");
+            //Debug.Log($"[LoadRuntimeValues] Loaded FOV from prefs: {fov}");
             _customFov = fov;
         }
         else
@@ -381,7 +381,7 @@ public class CustomisedSettings : ScriptableObject
         if (PlayerPrefs.HasKey("Setting_MouseSensitivity"))
         {
             float sens = PlayerPrefs.GetFloat("Setting_MouseSensitivity");
-            Debug.Log($"[LoadRuntimeValues] Loaded MouseSensitivity from prefs: {sens}");
+            //Debug.Log($"[LoadRuntimeValues] Loaded MouseSensitivity from prefs: {sens}");
             _customMouse = sens;
         }
 
