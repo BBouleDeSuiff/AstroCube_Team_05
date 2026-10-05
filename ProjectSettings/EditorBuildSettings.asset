@@ -16,7 +16,7 @@ EditorBuildSettings:
     guid: 5854d0f8551ec6841a286db84199d8f4
   - enabled: 1
     path: Assets/Game/Scenes/FinalGameScenes/Level_0_IntroCutscene_Final.unity
-    guid: ec6e5c2c76524b742ac808de34e3900d
+    guid: d81b281bb47604a40a5212d7bf5b4eb1
   - enabled: 1
     path: Assets/Game/Scenes/FinalGameScenes/Level_1_Final.unity
     guid: 7fab7766d5bb45d42889b67936771773
@@ -34,7 +34,7 @@ EditorBuildSettings:
     guid: 8e56798e2caacf242ab4a5710fac42e6
   - enabled: 1
     path: Assets/Game/Scenes/FinalGameScenes/Level_6_Final.unity
-    guid: d0b9f1417ea44d04593662531335dc9d
+    guid: ef5230ff2e8e6af4c833d723fdb97bf3
   - enabled: 1
     path: Assets/Game/Scenes/FinalGameScenes/Level_7_Final.unity
     guid: 4943f67774c20c5429154cee1733ab08
