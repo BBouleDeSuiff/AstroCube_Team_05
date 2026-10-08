@@ -26,11 +26,11 @@ public class GameActionShowSubtitle : AGameAction
     private IEnumerator PrintSubtitle()
     {
         _isFinished = false;
-        LocalizationManager.Instance.PrintStringFromID(_csvName, _localizationID, _locutor, _color);
+        //LocalizationManager.Instance.PrintStringFromID(_csvName, _localizationID, _locutor, _color);  // <-- Removed subtitles for the no-ui build
         if (AUDIO_ProgrammerInstrument.Instance != null)
             AUDIO_ProgrammerInstrument.Instance.PlayVoiceLine(_localizationID);
         yield return new WaitForSeconds(_duration);
-        LocalizationManager.Instance.ClearString();
+        //LocalizationManager.Instance.ClearString();   // <-- Removed subtitles for the no-ui build
         _isFinished = true;
     }
 

@@ -7,7 +7,7 @@ public class GameActionCinematicStrips : AGameAction
 
     protected override void ExecuteSpecific()
     {
-        LocalizationManager.Instance.SetStrips(_state, _animationDuration);
+        // LocalizationManager.Instance.SetStrips(_state, _animationDuration);         <--- commented for no-ui build
     }
 
     public override string BuildGameObjectName()
