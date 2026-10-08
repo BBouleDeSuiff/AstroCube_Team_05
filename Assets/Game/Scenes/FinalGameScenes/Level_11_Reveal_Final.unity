@@ -249,6 +249,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 28189408900664097, guid: e0c85bf540713094da1c4173f8b550de,
+        type: 3}
+      propertyPath: field of view
+      value: 58.76847
+      objectReference: {fileID: 0}
     - target: {fileID: 342671776877316550, guid: e0c85bf540713094da1c4173f8b550de,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -353,6 +358,11 @@ PrefabInstance:
         type: 3}
       propertyPath: playOnAwake
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182518443189061664, guid: e0c85bf540713094da1c4173f8b550de,
+        type: 3}
+      propertyPath: m_Lens.FieldOfView
+      value: 58.76847
       objectReference: {fileID: 0}
     - target: {fileID: 3294190792987505142, guid: e0c85bf540713094da1c4173f8b550de,
         type: 3}
@@ -45010,6 +45020,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 45376374}
+    - targetCorrespondingSourceObject: {fileID: 5240134699744278807, guid: d5a83ff84f883574b9c16b152434fa3f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 570245937}
+    - targetCorrespondingSourceObject: {fileID: 8731149626972519439, guid: d5a83ff84f883574b9c16b152434fa3f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 993734826}
     - targetCorrespondingSourceObject: {fileID: 3749087017715287216, guid: d5a83ff84f883574b9c16b152434fa3f,
         type: 3}
       insertIndex: -1
@@ -45078,14 +45096,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1799070413}
-    - targetCorrespondingSourceObject: {fileID: 5240134699744278807, guid: d5a83ff84f883574b9c16b152434fa3f,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 570245937}
-    - targetCorrespondingSourceObject: {fileID: 8731149626972519439, guid: d5a83ff84f883574b9c16b152434fa3f,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 993734826}
     - targetCorrespondingSourceObject: {fileID: 75997478645487424, guid: d5a83ff84f883574b9c16b152434fa3f,
         type: 3}
       insertIndex: -1
@@ -45781,7 +45791,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1707925282}
   - component: {fileID: 1707925281}
-  - component: {fileID: 1707925280}
   - component: {fileID: 1707925279}
   m_Layer: 13
   m_Name: HoldInputDisplay
@@ -56942,6 +56951,11 @@ PrefabInstance:
       propertyPath: autoPlay
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 744724764451335373, guid: 13f62fb648dcc0e4e974003356314fa9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 818836744273221466, guid: 13f62fb648dcc0e4e974003356314fa9,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -57148,6 +57162,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontSizeBase
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1888225151604458508, guid: 13f62fb648dcc0e4e974003356314fa9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2087509743016488846, guid: 13f62fb648dcc0e4e974003356314fa9,
         type: 3}
@@ -57563,6 +57582,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -14.94
       objectReference: {fileID: 0}
+    - target: {fileID: 4318768485036135155, guid: 13f62fb648dcc0e4e974003356314fa9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4510666377205233022, guid: 13f62fb648dcc0e4e974003356314fa9,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -57737,6 +57761,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5914629676405513913, guid: 13f62fb648dcc0e4e974003356314fa9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5972835186216231276, guid: 13f62fb648dcc0e4e974003356314fa9,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -57761,6 +57790,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: '- wait 1,5s'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6111170317003907884, guid: 13f62fb648dcc0e4e974003356314fa9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6311142909298372362, guid: 13f62fb648dcc0e4e974003356314fa9,
         type: 3}
@@ -57856,6 +57890,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontSizeBase
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996884782842517541, guid: 13f62fb648dcc0e4e974003356314fa9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7165401324557035837, guid: 13f62fb648dcc0e4e974003356314fa9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7166366753090621877, guid: 13f62fb648dcc0e4e974003356314fa9,
         type: 3}
