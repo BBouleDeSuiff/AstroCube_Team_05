@@ -118,6 +118,8 @@ public class InputDisplay : MonoBehaviour
 
     private void ActivateDisplayText()
     {
+        return; // <---- no-ui build
+
         if (_hasBeenCompleted) return;
         if (!_canvasGroup) return;
         if (_isDisplayed) return;
@@ -164,6 +166,8 @@ public class InputDisplay : MonoBehaviour
 
     public void StartDisplay()
     {
+        return;  // <-- no-ui build 
+
         _isDisplayed = true;
         _onStartShowText?.Invoke();
         _FadeDisplay(1, _fadeOutDuration);
