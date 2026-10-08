@@ -166,10 +166,11 @@ public class LocalizationManager : MonoBehaviour
         _locutor.gameObject.SetActive(true);
     }
 
+    // Memory Object subtitles should be managed by the same system as normal subtitles. This should be made the case in Alula2.
     public void PrintStringFromID(string csvName, string id, string locutor, Color? color = null)
     {
         _currentPrintedText = (csvName, id);
-        PrintString(GetString(csvName, id), locutor, color);
+        // PrintString(GetString(csvName, id), locutor, color);     // <-- removing Memory Object Subtitles for no-ui build
     }
 
     public void ClearString()
