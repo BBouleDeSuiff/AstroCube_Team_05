@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: b97613928e436e243897f15ffdaf58ee, type: 2}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -91,6 +91,4 @@ MonoBehaviour:
   _xboxMaterial: {fileID: 2100000, guid: b97613928e436e243897f15ffdaf58ee, type: 2}
   _playstationMaterial: {fileID: 2100000, guid: d7f07a17bf1cf744ab0100eaf79aaecb,
     type: 2}
-  _useKeyboardGO: 0
-  _keyboardGO: {fileID: 0}
   _keyboardMaterial: {fileID: 2100000, guid: 2c0f90145a009484680f90963abdc5a9, type: 2}
