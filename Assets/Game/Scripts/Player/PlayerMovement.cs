@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
     private float _currentMoveSpeed;
     private float _currentMoveSpeedFactor = 1f;
     private float _currentCoyoteTime;
-    private float _currentFallSpeed;
+    private float _currentFallSpeed; // 100% USELESS FUCK NTM
     private Vector3 _verticalVelocity;
     private Vector3 _horizontalVelocity;
     private Vector3 _pastHorizontalVelocity;
@@ -227,7 +227,8 @@ public class PlayerMovement : MonoBehaviour
         {
             _currentFallSpeed += _gameSettings.Gravity * Time.deltaTime;
             _currentFallSpeed = Mathf.Clamp(_currentFallSpeed, -_maxPlayerFallSpeed, _maxPlayerFallSpeed);
-            _verticalVelocity += transform.up * (_gameSettings.Gravity * Time.deltaTime);
+            _verticalVelocity += transform.up * Mathf.Clamp(_gameSettings.Gravity * Time.deltaTime, -_maxPlayerFallSpeed, _maxPlayerFallSpeed);
+            //print(_verticalVelocity);
         }
         else if (_verticalVelocity.y < 0 && Vector3.Dot(_verticalVelocity, transform.up) < 0)
         {
@@ -245,7 +246,13 @@ public class PlayerMovement : MonoBehaviour
 
         _controller.Move(moveDelta);
     }
-
+    public void ResetMovement()
+    {
+        _horizontalVelocity = Vector3.zero;
+        _verticalVelocity = Vector3.zero;
+        _externallyAppliedMovement = Vector3.zero;
+        _currentFallSpeed = 0f;
+    }
     private void HandleCrouch()
     {
         if (!_canCrouch) return;
